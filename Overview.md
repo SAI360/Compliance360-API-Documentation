@@ -10,11 +10,11 @@ REST resources are called using standard HTTP methods. The Compliance 360 REST A
 
 | Category | URL | Description |
 | --- | --- | --- |
-| [Security](security.html) | https://secure.compliance360&#46com/API/2.0/Security/ | Provides the ability to log in with a username and password |
-| [Metadata](meta.html) | https://secure.compliance360&#46com/API/2.0/Meta/ | Provides metadata information about the entities and fields exposed by the other APIs |
-| [Data](data.html) | https://secure.compliance360&#46com/API/2.0/Data/ | Provides CRUD (create, retrieve, update and delete) operations for entities and fields |
-| [Raw](raw.html) | https://secure.compliance360&#46com/API/2.0/Raw/ | Provides streaming functionality for uploading and downloading files |
-| [History](history.html) | https://secure.compliance360&#46com/API/2.0/History/ | Provides retrieve operation for entities that track history |
+| [Security](security.html) | https://secure.compliance360.com/API/2.0/Security/ | Provides the ability to log in with a username and password |
+| [Metadata](meta.html) | https://secure.compliance360.com/API/2.0/Meta/ | Provides metadata information about the entities and fields exposed by the other APIs |
+| [Data](data.html) | https://secure.compliance360.com/API/2.0/Data/ | Provides CRUD (create, retrieve, update and delete) operations for entities and fields |
+| [Raw](raw.html) | https://secure.compliance360.com/API/2.0/Raw/ | Provides streaming functionality for uploading and downloading files |
+| [History](history.html) | https://secure.compliance360.com/API/2.0/History/ | Provides retrieve operation for entities that track history |
 
 ## Basic Terminology
 
