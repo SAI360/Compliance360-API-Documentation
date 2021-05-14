@@ -24,84 +24,84 @@ GET /API/2.0/Meta?token=/wEFKnpvbmRhfDY1YzJiNTFhLTFhYTMtNGYzZC05YjFhLWY0Njk0NmI2
 
 HTTP/1.1 200 OK<br>
 &lt;Modules><br>
-<Module Token="EmployeeManagement" QualifiedToken="EmployeeManagement"><br>
-<Components><br>
-<Component Token="Employee" QualifiedToken="EmployeeManagement/Employee"><br>
-<Module Token="EmployeeManagement" QualifiedToken="EmployeeManagement" /><br>
-<Types><br>
-<Type Token="Default" QualifiedToken="EmployeeManagement/Employee/Default" IsReadOnly="False"><br>
-<Module Token="EmployeeManagement" QualifiedToken="EmployeeManagement" /><br>
-<Component Token="Employee" QualifiedToken="EmployeeManagement/Employee" /><br>
-<IdentityField Token="InstanceId" QualifiedToken="EmployeeManagement/Employee/Default/InstanceId" /><br>
-<Fields><br>
-<Field Token="InstanceId" QualifiedToken="EmployeeManagement/Employee/Default/InstanceId" FieldType="Relation" IsMultiValue="False" IsReadOnly="True" IsRequired="True"><br>
-<Module Token="EmployeeManagement" QualifiedToken="EmployeeManagement" /><br>
-<Component Token="Employee" QualifiedToken="EmployeeManagement/Employee" /><br>
-<Type Token="Default" QualifiedToken="EmployeeManagement/Employee/Default" /><br>
-<RelatedComponent Token="Employee" QualifiedToken="EmployeeManagement/Employee" /><br>
-<RelatedType Token="Default" QualifiedToken="EmployeeManagement/Employee/Default" /><br>
-</Field><br>
-<Field Token="WorkflowTemplate" QualifiedToken="EmployeeManagement/Employee/Default/WorkflowTemplate" FieldType="Relation" IsMultiValue="False" IsReadOnly="False" IsRequired="True"><br>
-<Module Token="EmployeeManagement" QualifiedToken="EmployeeManagement" /><br>
-<Component Token="Employee" QualifiedToken="EmployeeManagement/Employee" /><br>
-<Type Token="Default" QualifiedToken="EmployeeManagement/Employee/Default" /><br>
-<RelatedComponent Token="WorkflowTemplates" QualifiedToken="Global/WorkflowTemplates" /><br>
-<RelatedType Token="Employee" QualifiedToken="Global/WorkflowTemplates/Employee" /><br>
-</Field><br>
-<Field Token="FirstName" QualifiedToken="EmployeeManagement/Employee/Default/FirstName" FieldType="String" IsMultiValue="False" IsReadOnly="False" IsRequired="False"><br>
-<Module Token="EmployeeManagement" QualifiedToken="EmployeeManagement" /><br>
-<Component Token="Employee" QualifiedToken="EmployeeManagement/Employee" /><br>
-<Type Token="Default" QualifiedToken="EmployeeManagement/Employee/Default" /><br>
-</Field><br>
-<Field Token="LastName" QualifiedToken="EmployeeManagement/Employee/Default/LastName" FieldType="String" IsMultiValue="False" IsReadOnly="False" IsRequired="False"><br>
-<Module Token="EmployeeManagement" QualifiedToken="EmployeeManagement" /><br>
-<Component Token="Employee" QualifiedToken="EmployeeManagement/Employee" /><br>
-<Type Token="Default" QualifiedToken="EmployeeManagement/Employee/Default" /><br>
-</Field><br>
-<Field Token="Password" QualifiedToken="EmployeeManagement/Employee/Default/Password" FieldType="String" IsMultiValue="False" IsReadOnly="False" IsRequired="False"><br>
-<Module Token="EmployeeManagement" QualifiedToken="EmployeeManagement" /><br>
-<Component Token="Employee" QualifiedToken="EmployeeManagement/Employee" /><br>
-<Type Token="Default" QualifiedToken="EmployeeManagement/Employee/Default" /><br>
-</Field><br>
-<Field Token="PrimaryDivision" QualifiedToken="EmployeeManagement/Employee/Default/PrimaryDivision" FieldType="Relation" IsMultiValue="False" IsReadOnly="False" IsRequired="False"><br>
-<Module Token="EmployeeManagement" QualifiedToken="EmployeeManagement" /><br>
-<Component Token="Employee" QualifiedToken="EmployeeManagement/Employee" /><br>
-<Type Token="Default" QualifiedToken="EmployeeManagement/Employee/Default" /><br>
-<RelatedComponent Token="EmployeeDivision" QualifiedToken="EmployeeManagement/EmployeeDivision" /><br>
-<RelatedType Token="Default" QualifiedToken="EmployeeManagement/EmployeeDivision/Default" /><br>
-</Field><br>
-<Field Token="Profiles" QualifiedToken="EmployeeManagement/Employee/Default/Profiles" FieldType="Relation" IsMultiValue="True" IsReadOnly="False" IsRequired="False"><br>
-<Module Token="EmployeeManagement" QualifiedToken="EmployeeManagement" /><br>
-<Component Token="Employee" QualifiedToken="EmployeeManagement/Employee" /><br>
-<Type Token="Default" QualifiedToken="EmployeeManagement/Employee/Default" /><br>
-<RelatedComponent Token="EmployeeProfile" QualifiedToken="EmployeeManagement/EmployeeProfile" /><br>
-<RelatedType Token="Default" QualifiedToken="EmployeeManagement/EmployeeProfile/Default" /><br>
-</Field><br>
-<Field Token="UserName" QualifiedToken="EmployeeManagement/Employee/Default/UserName" FieldType="String" IsMultiValue="False" IsReadOnly="False" IsRequired="False"><br>
-<Module Token="EmployeeManagement" QualifiedToken="EmployeeManagement" /><br>
-<Component Token="Employee" QualifiedToken="EmployeeManagement/Employee" /><br>
-<Type Token="Default" QualifiedToken="EmployeeManagement/Employee/Default" /><br>
-</Field><br>
-<!-- SNIP --><br>
-</Fields><br>
-<Operations><br>
-<Operation Token="Delete" QualifiedToken="EmployeeManagement/Employee/Default/Delete"><br>
-<Module Token="EmployeeManagement" QualifiedToken="EmployeeManagement" /><br>
-<Component Token="Employee" QualifiedToken="EmployeeManagement/Employee" /><br>
-<Type Token="Default" QualifiedToken="EmployeeManagement/Employee/Default" /><br>
-<Validator Token="CanDelete" QualifiedToken="EmployeeManagement/Employee/Default/CanDelete" /><br>
-</Operation><br>
-<!-- SNIP --><br>
-</Operations><br>
-</Type><br>
-<!-- SNIP --><br>
-</Types><br>
-</Component><br>
-<!-- SNIP --><br>
-</Components><br>
-</Module><br>
-<!-- SNIP --><br>
-</Modules><br>
+&lt;Module Token="EmployeeManagement" QualifiedToken="EmployeeManagement"><br>
+&lt;Components><br>
+&lt;Component Token="Employee" QualifiedToken="EmployeeManagement/Employee"><br>
+&lt;Module Token="EmployeeManagement" QualifiedToken="EmployeeManagement" /><br>
+&lt;Types><br>
+&lt;Type Token="Default" QualifiedToken="EmployeeManagement/Employee/Default" IsReadOnly="False"><br>
+&lt;Module Token="EmployeeManagement" QualifiedToken="EmployeeManagement" /><br>
+&lt;Component Token="Employee" QualifiedToken="EmployeeManagement/Employee" /><br>
+&lt;IdentityField Token="InstanceId" QualifiedToken="EmployeeManagement/Employee/Default/InstanceId" /><br>
+&lt;Fields><br>
+&lt;Field Token="InstanceId" QualifiedToken="EmployeeManagement/Employee/Default/InstanceId" FieldType="Relation" IsMultiValue="False" IsReadOnly="True" IsRequired="True"><br>
+&lt;Module Token="EmployeeManagement" QualifiedToken="EmployeeManagement" /><br>
+&lt;Component Token="Employee" QualifiedToken="EmployeeManagement/Employee" /><br>
+&lt;Type Token="Default" QualifiedToken="EmployeeManagement/Employee/Default" /><br>
+&lt;RelatedComponent Token="Employee" QualifiedToken="EmployeeManagement/Employee" /><br>
+&lt;RelatedType Token="Default" QualifiedToken="EmployeeManagement/Employee/Default" /><br>
+&lt;/Field><br>
+&lt;Field Token="WorkflowTemplate" QualifiedToken="EmployeeManagement/Employee/Default/WorkflowTemplate" FieldType="Relation" IsMultiValue="False" IsReadOnly="False" IsRequired="True"><br>
+&lt;Module Token="EmployeeManagement" QualifiedToken="EmployeeManagement" /><br>
+&lt;Component Token="Employee" QualifiedToken="EmployeeManagement/Employee" /><br>
+&lt;Type Token="Default" QualifiedToken="EmployeeManagement/Employee/Default" /><br>
+&lt;RelatedComponent Token="WorkflowTemplates" QualifiedToken="Global/WorkflowTemplates" /><br>
+&lt;RelatedType Token="Employee" QualifiedToken="Global/WorkflowTemplates/Employee" /><br>
+&lt;/Field><br>
+&lt;Field Token="FirstName" QualifiedToken="EmployeeManagement/Employee/Default/FirstName" FieldType="String" IsMultiValue="False" IsReadOnly="False" IsRequired="False"><br>
+&lt;Module Token="EmployeeManagement" QualifiedToken="EmployeeManagement" /><br>
+&lt;Component Token="Employee" QualifiedToken="EmployeeManagement/Employee" /><br>
+&lt;Type Token="Default" QualifiedToken="EmployeeManagement/Employee/Default" /><br>
+&lt;/Field><br>
+&lt;Field Token="LastName" QualifiedToken="EmployeeManagement/Employee/Default/LastName" FieldType="String" IsMultiValue="False" IsReadOnly="False" IsRequired="False"><br>
+&lt;Module Token="EmployeeManagement" QualifiedToken="EmployeeManagement" /><br>
+&lt;Component Token="Employee" QualifiedToken="EmployeeManagement/Employee" /><br>
+&lt;Type Token="Default" QualifiedToken="EmployeeManagement/Employee/Default" /><br>
+&lt;/Field><br>
+&lt;Field Token="Password" QualifiedToken="EmployeeManagement/Employee/Default/Password" FieldType="String" IsMultiValue="False" IsReadOnly="False" IsRequired="False"><br>
+&lt;Module Token="EmployeeManagement" QualifiedToken="EmployeeManagement" /><br>
+&lt;Component Token="Employee" QualifiedToken="EmployeeManagement/Employee" /><br>
+&lt;Type Token="Default" QualifiedToken="EmployeeManagement/Employee/Default" /><br>
+&lt;/Field><br>
+&lt;Field Token="PrimaryDivision" QualifiedToken="EmployeeManagement/Employee/Default/PrimaryDivision" FieldType="Relation" IsMultiValue="False" IsReadOnly="False" IsRequired="False"><br>
+&lt;Module Token="EmployeeManagement" QualifiedToken="EmployeeManagement" /><br>
+&lt;Component Token="Employee" QualifiedToken="EmployeeManagement/Employee" /><br>
+&lt;Type Token="Default" QualifiedToken="EmployeeManagement/Employee/Default" /><br>
+&lt;RelatedComponent Token="EmployeeDivision" QualifiedToken="EmployeeManagement/EmployeeDivision" /><br>
+&lt;RelatedType Token="Default" QualifiedToken="EmployeeManagement/EmployeeDivision/Default" /><br>
+&lt;/Field><br>
+&lt;Field Token="Profiles" QualifiedToken="EmployeeManagement/Employee/Default/Profiles" FieldType="Relation" IsMultiValue="True" IsReadOnly="False" IsRequired="False"><br>
+&lt;Module Token="EmployeeManagement" QualifiedToken="EmployeeManagement" /><br>
+&lt;Component Token="Employee" QualifiedToken="EmployeeManagement/Employee" /><br>
+&lt;Type Token="Default" QualifiedToken="EmployeeManagement/Employee/Default" /><br>
+&lt;RelatedComponent Token="EmployeeProfile" QualifiedToken="EmployeeManagement/EmployeeProfile" /><br>
+&lt;RelatedType Token="Default" QualifiedToken="EmployeeManagement/EmployeeProfile/Default" /><br>
+&lt;/Field><br>
+&lt;Field Token="UserName" QualifiedToken="EmployeeManagement/Employee/Default/UserName" FieldType="String" IsMultiValue="False" IsReadOnly="False" IsRequired="False"><br>
+&lt;Module Token="EmployeeManagement" QualifiedToken="EmployeeManagement" /><br>
+&lt;Component Token="Employee" QualifiedToken="EmployeeManagement/Employee" /><br>
+&lt;Type Token="Default" QualifiedToken="EmployeeManagement/Employee/Default" /><br>
+&lt;/Field><br>
+&lt;!-- SNIP --><br>
+&lt;/Fields><br>
+&lt;Operations><br>
+&lt;Operation Token="Delete" QualifiedToken="EmployeeManagement/Employee/Default/Delete"><br>
+&lt;Module Token="EmployeeManagement" QualifiedToken="EmployeeManagement" /><br>
+&lt;Component Token="Employee" QualifiedToken="EmployeeManagement/Employee" /><br>
+&lt;Type Token="Default" QualifiedToken="EmployeeManagement/Employee/Default" /><br>
+&lt;Validator Token="CanDelete" QualifiedToken="EmployeeManagement/Employee/Default/CanDelete" /><br>
+&lt;/Operation><br>
+&lt;!-- SNIP --><br>
+&lt;/Operations><br>
+&lt;/Type><br>
+&lt;!-- SNIP --><br>
+&lt;/Types><br>
+&lt;/Component><br>
+&lt;!-- SNIP --><br>
+&lt;/Components><br>
+&lt;/Module><br>
+&lt;!-- SNIP --><br>
+&lt;/Modules><br>
 
 ## GetModule
 
@@ -125,82 +125,82 @@ GET /API/2.0/Meta/EmployeeManagement?token=/wEFKnpvbmRhfDY1YzJiNTFhLTFhYTMtNGYzZ
 ### Sample Response
 
 HTTP/1.1 200 OK<br>
-<Module Token="EmployeeManagement" QualifiedToken="EmployeeManagement"><br>
-<Components><br>
-<Component Token="Employee" QualifiedToken="EmployeeManagement/Employee"><br>
-<Module Token="EmployeeManagement" QualifiedToken="EmployeeManagement" /><br>
-<Types><br>
-<Type Token="Default" QualifiedToken="EmployeeManagement/Employee/Default" IsReadOnly="False"><br>
-<Module Token="EmployeeManagement" QualifiedToken="EmployeeManagement" /><br>
-<Component Token="Employee" QualifiedToken="EmployeeManagement/Employee" /><br>
-<IdentityField Token="InstanceId" QualifiedToken="EmployeeManagement/Employee/Default/InstanceId" /><br>
-<Fields><br>
-<Field Token="InstanceId" QualifiedToken="EmployeeManagement/Employee/Default/InstanceId" FieldType="Relation" IsMultiValue="False" IsReadOnly="True" IsRequired="True"><br>
-<Module Token="EmployeeManagement" QualifiedToken="EmployeeManagement" /><br>
-<Component Token="Employee" QualifiedToken="EmployeeManagement/Employee" /><br>
-<Type Token="Default" QualifiedToken="EmployeeManagement/Employee/Default" /><br>
-<RelatedComponent Token="Employee" QualifiedToken="EmployeeManagement/Employee" /><br>
-<RelatedType Token="Default" QualifiedToken="EmployeeManagement/Employee/Default" /><br>
-</Field><br>
-<Field Token="WorkflowTemplate" QualifiedToken="EmployeeManagement/Employee/Default/WorkflowTemplate" FieldType="Relation" IsMultiValue="False" IsReadOnly="False" IsRequired="True"><br>
-<Module Token="EmployeeManagement" QualifiedToken="EmployeeManagement" /><br>
-<Component Token="Employee" QualifiedToken="EmployeeManagement/Employee" /><br>
-<Type Token="Default" QualifiedToken="EmployeeManagement/Employee/Default" /><br>
-<RelatedComponent Token="WorkflowTemplates" QualifiedToken="Global/WorkflowTemplates" /><br>
-<RelatedType Token="Employee" QualifiedToken="Global/WorkflowTemplates/Employee" /><br>
-</Field><br>
-<Field Token="FirstName" QualifiedToken="EmployeeManagement/Employee/Default/FirstName" FieldType="String" IsMultiValue="False" IsReadOnly="False" IsRequired="False"><br>
-<Module Token="EmployeeManagement" QualifiedToken="EmployeeManagement" /><br>
-<Component Token="Employee" QualifiedToken="EmployeeManagement/Employee" /><br>
-<Type Token="Default" QualifiedToken="EmployeeManagement/Employee/Default" /><br>
-</Field><br>
-<Field Token="LastName" QualifiedToken="EmployeeManagement/Employee/Default/LastName" FieldType="String" IsMultiValue="False" IsReadOnly="False" IsRequired="False"><br>
-<Module Token="EmployeeManagement" QualifiedToken="EmployeeManagement" /><br>
-<Component Token="Employee" QualifiedToken="EmployeeManagement/Employee" /><br>
-<Type Token="Default" QualifiedToken="EmployeeManagement/Employee/Default" /><br>
-</Field><br>
-<Field Token="Password" QualifiedToken="EmployeeManagement/Employee/Default/Password" FieldType="String" IsMultiValue="False" IsReadOnly="False" IsRequired="False"><br>
-<Module Token="EmployeeManagement" QualifiedToken="EmployeeManagement" /><br>
-<Component Token="Employee" QualifiedToken="EmployeeManagement/Employee" /><br>
-<Type Token="Default" QualifiedToken="EmployeeManagement/Employee/Default" /><br>
-</Field><br>
-<Field Token="PrimaryDivision" QualifiedToken="EmployeeManagement/Employee/Default/PrimaryDivision" FieldType="Relation" IsMultiValue="False" IsReadOnly="False" IsRequired="False"><br>
-<Module Token="EmployeeManagement" QualifiedToken="EmployeeManagement" /><br>
-<Component Token="Employee" QualifiedToken="EmployeeManagement/Employee" /><br>
-<Type Token="Default" QualifiedToken="EmployeeManagement/Employee/Default" /><br>
-<RelatedComponent Token="EmployeeDivision" QualifiedToken="EmployeeManagement/EmployeeDivision" /><br>
-<RelatedType Token="Default" QualifiedToken="EmployeeManagement/EmployeeDivision/Default" /><br>
-</Field><br>
-<Field Token="Profiles" QualifiedToken="EmployeeManagement/Employee/Default/Profiles" FieldType="Relation" IsMultiValue="True" IsReadOnly="False" IsRequired="False"><br>
-<Module Token="EmployeeManagement" QualifiedToken="EmployeeManagement" /><br>
-<Component Token="Employee" QualifiedToken="EmployeeManagement/Employee" /><br>
-<Type Token="Default" QualifiedToken="EmployeeManagement/Employee/Default" /><br>
-<RelatedComponent Token="EmployeeProfile" QualifiedToken="EmployeeManagement/EmployeeProfile" /><br>
-<RelatedType Token="Default" QualifiedToken="EmployeeManagement/EmployeeProfile/Default" /><br>
-</Field><br>
-<Field Token="UserName" QualifiedToken="EmployeeManagement/Employee/Default/UserName" FieldType="String" IsMultiValue="False" IsReadOnly="False" IsRequired="False"><br>
-<Module Token="EmployeeManagement" QualifiedToken="EmployeeManagement" /><br>
-<Component Token="Employee" QualifiedToken="EmployeeManagement/Employee" /><br>
-<Type Token="Default" QualifiedToken="EmployeeManagement/Employee/Default" /><br>
-</Field><br>
-<!-- SNIP --><br>
-</Fields><br>
-<Operations><br>
-<Operation Token="Delete" QualifiedToken="EmployeeManagement/Employee/Default/Delete"><br>
-<Module Token="EmployeeManagement" QualifiedToken="EmployeeManagement" /><br>
-<Component Token="Employee" QualifiedToken="EmployeeManagement/Employee" /><br>
-<Type Token="Default" QualifiedToken="EmployeeManagement/Employee/Default" /><br>
-<Validator Token="CanDelete" QualifiedToken="EmployeeManagement/Employee/Default/CanDelete" /><br>
-</Operation><br>
-<!-- SNIP --><br>
-</Operations><br>
-</Type><br>
-<!-- SNIP --><br>
-</Types><br>
-</Component><br>
-<!-- SNIP --><br>
-</Components><br>
-</Module><br>
+&lt;Module Token="EmployeeManagement" QualifiedToken="EmployeeManagement"><br>
+&lt;Components><br>
+&lt;Component Token="Employee" QualifiedToken="EmployeeManagement/Employee"><br>
+&lt;Module Token="EmployeeManagement" QualifiedToken="EmployeeManagement" /><br>
+&lt;Types><br>
+&lt;Type Token="Default" QualifiedToken="EmployeeManagement/Employee/Default" IsReadOnly="False"><br>
+&lt;Module Token="EmployeeManagement" QualifiedToken="EmployeeManagement" /><br>
+&lt;Component Token="Employee" QualifiedToken="EmployeeManagement/Employee" /><br>
+&lt;IdentityField Token="InstanceId" QualifiedToken="EmployeeManagement/Employee/Default/InstanceId" /><br>
+&lt;Fields><br>
+&lt;Field Token="InstanceId" QualifiedToken="EmployeeManagement/Employee/Default/InstanceId" FieldType="Relation" IsMultiValue="False" IsReadOnly="True" IsRequired="True"><br>
+&lt;Module Token="EmployeeManagement" QualifiedToken="EmployeeManagement" /><br>
+&lt;Component Token="Employee" QualifiedToken="EmployeeManagement/Employee" /><br>
+&lt;Type Token="Default" QualifiedToken="EmployeeManagement/Employee/Default" /><br>
+&lt;RelatedComponent Token="Employee" QualifiedToken="EmployeeManagement/Employee" /><br>
+&lt;RelatedType Token="Default" QualifiedToken="EmployeeManagement/Employee/Default" /><br>
+&lt;/Field><br>
+&lt;Field Token="WorkflowTemplate" QualifiedToken="EmployeeManagement/Employee/Default/WorkflowTemplate" FieldType="Relation" IsMultiValue="False" IsReadOnly="False" IsRequired="True"><br>
+&lt;Module Token="EmployeeManagement" QualifiedToken="EmployeeManagement" /><br>
+&lt;Component Token="Employee" QualifiedToken="EmployeeManagement/Employee" /><br>
+&lt;Type Token="Default" QualifiedToken="EmployeeManagement/Employee/Default" /><br>
+&lt;RelatedComponent Token="WorkflowTemplates" QualifiedToken="Global/WorkflowTemplates" /><br>
+&lt;RelatedType Token="Employee" QualifiedToken="Global/WorkflowTemplates/Employee" /><br>
+&lt;/Field><br>
+&lt;Field Token="FirstName" QualifiedToken="EmployeeManagement/Employee/Default/FirstName" FieldType="String" IsMultiValue="False" IsReadOnly="False" IsRequired="False"><br>
+&lt;Module Token="EmployeeManagement" QualifiedToken="EmployeeManagement" /><br>
+&lt;Component Token="Employee" QualifiedToken="EmployeeManagement/Employee" /><br>
+&lt;Type Token="Default" QualifiedToken="EmployeeManagement/Employee/Default" /><br>
+&lt;/Field><br>
+&lt;Field Token="LastName" QualifiedToken="EmployeeManagement/Employee/Default/LastName" FieldType="String" IsMultiValue="False" IsReadOnly="False" IsRequired="False"><br>
+&lt;Module Token="EmployeeManagement" QualifiedToken="EmployeeManagement" /><br>
+&lt;Component Token="Employee" QualifiedToken="EmployeeManagement/Employee" /><br>
+&lt;Type Token="Default" QualifiedToken="EmployeeManagement/Employee/Default" /><br>
+&lt;/Field><br>
+&lt;Field Token="Password" QualifiedToken="EmployeeManagement/Employee/Default/Password" FieldType="String" IsMultiValue="False" IsReadOnly="False" IsRequired="False"><br>
+&lt;Module Token="EmployeeManagement" QualifiedToken="EmployeeManagement" /><br>
+&lt;Component Token="Employee" QualifiedToken="EmployeeManagement/Employee" /><br>
+&lt;Type Token="Default" QualifiedToken="EmployeeManagement/Employee/Default" /><br>
+&lt;/Field><br>
+&lt;Field Token="PrimaryDivision" QualifiedToken="EmployeeManagement/Employee/Default/PrimaryDivision" FieldType="Relation" IsMultiValue="False" IsReadOnly="False" IsRequired="False"><br>
+&lt;Module Token="EmployeeManagement" QualifiedToken="EmployeeManagement" /><br>
+&lt;Component Token="Employee" QualifiedToken="EmployeeManagement/Employee" /><br>
+&lt;Type Token="Default" QualifiedToken="EmployeeManagement/Employee/Default" /><br>
+&lt;RelatedComponent Token="EmployeeDivision" QualifiedToken="EmployeeManagement/EmployeeDivision" /><br>
+&lt;RelatedType Token="Default" QualifiedToken="EmployeeManagement/EmployeeDivision/Default" /><br>
+&lt;/Field><br>
+&lt;Field Token="Profiles" QualifiedToken="EmployeeManagement/Employee/Default/Profiles" FieldType="Relation" IsMultiValue="True" IsReadOnly="False" IsRequired="False"><br>
+&lt;Module Token="EmployeeManagement" QualifiedToken="EmployeeManagement" /><br>
+&lt;Component Token="Employee" QualifiedToken="EmployeeManagement/Employee" /><br>
+&lt;Type Token="Default" QualifiedToken="EmployeeManagement/Employee/Default" /><br>
+&lt;RelatedComponent Token="EmployeeProfile" QualifiedToken="EmployeeManagement/EmployeeProfile" /><br>
+&lt;RelatedType Token="Default" QualifiedToken="EmployeeManagement/EmployeeProfile/Default" /><br>
+&lt;/Field><br>
+&lt;Field Token="UserName" QualifiedToken="EmployeeManagement/Employee/Default/UserName" FieldType="String" IsMultiValue="False" IsReadOnly="False" IsRequired="False"><br>
+&lt;Module Token="EmployeeManagement" QualifiedToken="EmployeeManagement" /><br>
+&lt;Component Token="Employee" QualifiedToken="EmployeeManagement/Employee" /><br>
+&lt;Type Token="Default" QualifiedToken="EmployeeManagement/Employee/Default" /><br>
+&lt;/Field><br>
+&lt;!-- SNIP --><br>
+&lt;/Fields><br>
+&lt;Operations><br>
+&lt;Operation Token="Delete" QualifiedToken="EmployeeManagement/Employee/Default/Delete"><br>
+&lt;Module Token="EmployeeManagement" QualifiedToken="EmployeeManagement" /><br>
+&lt;Component Token="Employee" QualifiedToken="EmployeeManagement/Employee" /><br>
+&lt;Type Token="Default" QualifiedToken="EmployeeManagement/Employee/Default" /><br>
+&lt;Validator Token="CanDelete" QualifiedToken="EmployeeManagement/Employee/Default/CanDelete" /><br>
+&lt;/Operation><br>
+&lt;!-- SNIP --><br>
+&lt;/Operations><br>
+&lt;/Type><br>
+&lt;!-- SNIP --><br>
+&lt;/Types><br>
+&lt;/Component><br>
+&lt;!-- SNIP --><br>
+&lt;/Components><br>
+&lt;/Module><br>
 
 ## GetComponent
 
@@ -225,77 +225,77 @@ GET /API/2.0/Meta/EmployeeManagement/Employee?token=/wEFKnpvbmRhfDY1YzJiNTFhLTFh
 ### Sample Response
 
 HTTP/1.1 200 OK<br>
-<Component Token="Employee" QualifiedToken="EmployeeManagement/Employee"><br>
-<Module Token="EmployeeManagement" QualifiedToken="EmployeeManagement" /><br>
-<Types><br>
-<Type Token="Default" QualifiedToken="EmployeeManagement/Employee/Default" IsReadOnly="False"><br>
-<Module Token="EmployeeManagement" QualifiedToken="EmployeeManagement" /><br>
-<Component Token="Employee" QualifiedToken="EmployeeManagement/Employee" /><br>
-<IdentityField Token="InstanceId" QualifiedToken="EmployeeManagement/Employee/Default/InstanceId" /><br>
-<Fields><br>
-<Field Token="InstanceId" QualifiedToken="EmployeeManagement/Employee/Default/InstanceId" FieldType="Relation" IsMultiValue="False" IsReadOnly="True" IsRequired="True"><br>
-<Module Token="EmployeeManagement" QualifiedToken="EmployeeManagement" /><br>
-<Component Token="Employee" QualifiedToken="EmployeeManagement/Employee" /><br>
-<Type Token="Default" QualifiedToken="EmployeeManagement/Employee/Default" /><br>
-<RelatedComponent Token="Employee" QualifiedToken="EmployeeManagement/Employee" /><br>
-<RelatedType Token="Default" QualifiedToken="EmployeeManagement/Employee/Default" /><br>
-</Field><br>
-<Field Token="WorkflowTemplate" QualifiedToken="EmployeeManagement/Employee/Default/WorkflowTemplate" FieldType="Relation" IsMultiValue="False" IsReadOnly="False" IsRequired="True"><br>
-<Module Token="EmployeeManagement" QualifiedToken="EmployeeManagement" /><br>
-<Component Token="Employee" QualifiedToken="EmployeeManagement/Employee" /><br>
-<Type Token="Default" QualifiedToken="EmployeeManagement/Employee/Default" /><br>
-<RelatedComponent Token="WorkflowTemplates" QualifiedToken="Global/WorkflowTemplates" /><br>
-<RelatedType Token="Employee" QualifiedToken="Global/WorkflowTemplates/Employee" /><br>
-</Field><br>
-<Field Token="FirstName" QualifiedToken="EmployeeManagement/Employee/Default/FirstName" FieldType="String" IsMultiValue="False" IsReadOnly="False" IsRequired="False"><br>
-<Module Token="EmployeeManagement" QualifiedToken="EmployeeManagement" /><br>
-<Component Token="Employee" QualifiedToken="EmployeeManagement/Employee" /><br>
-<Type Token="Default" QualifiedToken="EmployeeManagement/Employee/Default" /><br>
-</Field><br>
-<Field Token="LastName" QualifiedToken="EmployeeManagement/Employee/Default/LastName" FieldType="String" IsMultiValue="False" IsReadOnly="False" IsRequired="False"><br>
-<Module Token="EmployeeManagement" QualifiedToken="EmployeeManagement" /><br>
-<Component Token="Employee" QualifiedToken="EmployeeManagement/Employee" /><br>
-<Type Token="Default" QualifiedToken="EmployeeManagement/Employee/Default" /><br>
-</Field><br>
-<Field Token="Password" QualifiedToken="EmployeeManagement/Employee/Default/Password" FieldType="String" IsMultiValue="False" IsReadOnly="False" IsRequired="False"><br>
-<Module Token="EmployeeManagement" QualifiedToken="EmployeeManagement" /><br>
-<Component Token="Employee" QualifiedToken="EmployeeManagement/Employee" /><br>
-<Type Token="Default" QualifiedToken="EmployeeManagement/Employee/Default" /><br>
-</Field><br>
-<Field Token="PrimaryDivision" QualifiedToken="EmployeeManagement/Employee/Default/PrimaryDivision" FieldType="Relation" IsMultiValue="False" IsReadOnly="False" IsRequired="False"><br>
-<Module Token="EmployeeManagement" QualifiedToken="EmployeeManagement" /><br>
-<Component Token="Employee" QualifiedToken="EmployeeManagement/Employee" /><br>
-<Type Token="Default" QualifiedToken="EmployeeManagement/Employee/Default" /><br>
-<RelatedComponent Token="EmployeeDivision" QualifiedToken="EmployeeManagement/EmployeeDivision" /><br>
-<RelatedType Token="Default" QualifiedToken="EmployeeManagement/EmployeeDivision/Default" /><br>
-</Field><br>
-<Field Token="Profiles" QualifiedToken="EmployeeManagement/Employee/Default/Profiles" FieldType="Relation" IsMultiValue="True" IsReadOnly="False" IsRequired="False"><br>
-<Module Token="EmployeeManagement" QualifiedToken="EmployeeManagement" /><br>
-<Component Token="Employee" QualifiedToken="EmployeeManagement/Employee" /><br>
-<Type Token="Default" QualifiedToken="EmployeeManagement/Employee/Default" /><br>
-<RelatedComponent Token="EmployeeProfile" QualifiedToken="EmployeeManagement/EmployeeProfile" /><br>
-<RelatedType Token="Default" QualifiedToken="EmployeeManagement/EmployeeProfile/Default" /><br>
-</Field><br>
-<Field Token="UserName" QualifiedToken="EmployeeManagement/Employee/Default/UserName" FieldType="String" IsMultiValue="False" IsReadOnly="False" IsRequired="False"><br>
-<Module Token="EmployeeManagement" QualifiedToken="EmployeeManagement" /><br>
-<Component Token="Employee" QualifiedToken="EmployeeManagement/Employee" /><br>
-<Type Token="Default" QualifiedToken="EmployeeManagement/Employee/Default" /><br>
-</Field><br>
-<!-- SNIP --><br>
-</Fields><br>
-<Operations><br>
-<Operation Token="Delete" QualifiedToken="EmployeeManagement/Employee/Default/Delete"><br>
-<Module Token="EmployeeManagement" QualifiedToken="EmployeeManagement" /><br>
-<Component Token="Employee" QualifiedToken="EmployeeManagement/Employee" /><br>
-<Type Token="Default" QualifiedToken="EmployeeManagement/Employee/Default" /><br>
-<Validator Token="CanDelete" QualifiedToken="EmployeeManagement/Employee/Default/CanDelete" /><br>
-</Operation><br>
-<!-- SNIP --><br>
-</Operations><br>
-</Type><br>
-<!-- SNIP --><br>
-</Types><br>
-</Component><br>
+&lt;Component Token="Employee" QualifiedToken="EmployeeManagement/Employee"><br>
+&lt;Module Token="EmployeeManagement" QualifiedToken="EmployeeManagement" /><br>
+&lt;Types><br>
+&lt;Type Token="Default" QualifiedToken="EmployeeManagement/Employee/Default" IsReadOnly="False"><br>
+&lt;Module Token="EmployeeManagement" QualifiedToken="EmployeeManagement" /><br>
+&lt;Component Token="Employee" QualifiedToken="EmployeeManagement/Employee" /><br>
+&lt;IdentityField Token="InstanceId" QualifiedToken="EmployeeManagement/Employee/Default/InstanceId" /><br>
+&lt;Fields><br>
+&lt;Field Token="InstanceId" QualifiedToken="EmployeeManagement/Employee/Default/InstanceId" FieldType="Relation" IsMultiValue="False" IsReadOnly="True" IsRequired="True"><br>
+&lt;Module Token="EmployeeManagement" QualifiedToken="EmployeeManagement" /><br>
+&lt;Component Token="Employee" QualifiedToken="EmployeeManagement/Employee" /><br>
+&lt;Type Token="Default" QualifiedToken="EmployeeManagement/Employee/Default" /><br>
+&lt;RelatedComponent Token="Employee" QualifiedToken="EmployeeManagement/Employee" /><br>
+&lt;RelatedType Token="Default" QualifiedToken="EmployeeManagement/Employee/Default" /><br>
+&lt;/Field><br>
+&lt;Field Token="WorkflowTemplate" QualifiedToken="EmployeeManagement/Employee/Default/WorkflowTemplate" FieldType="Relation" IsMultiValue="False" IsReadOnly="False" IsRequired="True"><br>
+&lt;Module Token="EmployeeManagement" QualifiedToken="EmployeeManagement" /><br>
+&lt;Component Token="Employee" QualifiedToken="EmployeeManagement/Employee" /><br>
+&lt;Type Token="Default" QualifiedToken="EmployeeManagement/Employee/Default" /><br>
+&lt;RelatedComponent Token="WorkflowTemplates" QualifiedToken="Global/WorkflowTemplates" /><br>
+&lt;RelatedType Token="Employee" QualifiedToken="Global/WorkflowTemplates/Employee" /><br>
+&lt;/Field><br>
+&lt;Field Token="FirstName" QualifiedToken="EmployeeManagement/Employee/Default/FirstName" FieldType="String" IsMultiValue="False" IsReadOnly="False" IsRequired="False"><br>
+&lt;Module Token="EmployeeManagement" QualifiedToken="EmployeeManagement" /><br>
+&lt;Component Token="Employee" QualifiedToken="EmployeeManagement/Employee" /><br>
+&lt;Type Token="Default" QualifiedToken="EmployeeManagement/Employee/Default" /><br>
+&lt;/Field><br>
+&lt;Field Token="LastName" QualifiedToken="EmployeeManagement/Employee/Default/LastName" FieldType="String" IsMultiValue="False" IsReadOnly="False" IsRequired="False"><br>
+&lt;Module Token="EmployeeManagement" QualifiedToken="EmployeeManagement" /><br>
+&lt;Component Token="Employee" QualifiedToken="EmployeeManagement/Employee" /><br>
+&lt;Type Token="Default" QualifiedToken="EmployeeManagement/Employee/Default" /><br>
+&lt;/Field><br>
+&lt;Field Token="Password" QualifiedToken="EmployeeManagement/Employee/Default/Password" FieldType="String" IsMultiValue="False" IsReadOnly="False" IsRequired="False"><br>
+&lt;Module Token="EmployeeManagement" QualifiedToken="EmployeeManagement" /><br>
+&lt;Component Token="Employee" QualifiedToken="EmployeeManagement/Employee" /><br>
+&lt;Type Token="Default" QualifiedToken="EmployeeManagement/Employee/Default" /><br>
+&lt;/Field><br>
+&lt;Field Token="PrimaryDivision" QualifiedToken="EmployeeManagement/Employee/Default/PrimaryDivision" FieldType="Relation" IsMultiValue="False" IsReadOnly="False" IsRequired="False"><br>
+&lt;Module Token="EmployeeManagement" QualifiedToken="EmployeeManagement" /><br>
+&lt;Component Token="Employee" QualifiedToken="EmployeeManagement/Employee" /><br>
+&lt;Type Token="Default" QualifiedToken="EmployeeManagement/Employee/Default" /><br>
+&lt;RelatedComponent Token="EmployeeDivision" QualifiedToken="EmployeeManagement/EmployeeDivision" /><br>
+&lt;RelatedType Token="Default" QualifiedToken="EmployeeManagement/EmployeeDivision/Default" /><br>
+&lt;/Field><br>
+&lt;Field Token="Profiles" QualifiedToken="EmployeeManagement/Employee/Default/Profiles" FieldType="Relation" IsMultiValue="True" IsReadOnly="False" IsRequired="False"><br>
+&lt;Module Token="EmployeeManagement" QualifiedToken="EmployeeManagement" /><br>
+&lt;Component Token="Employee" QualifiedToken="EmployeeManagement/Employee" /><br>
+&lt;Type Token="Default" QualifiedToken="EmployeeManagement/Employee/Default" /><br>
+&lt;RelatedComponent Token="EmployeeProfile" QualifiedToken="EmployeeManagement/EmployeeProfile" /><br>
+&lt;RelatedType Token="Default" QualifiedToken="EmployeeManagement/EmployeeProfile/Default" /><br>
+&lt;/Field><br>
+&lt;Field Token="UserName" QualifiedToken="EmployeeManagement/Employee/Default/UserName" FieldType="String" IsMultiValue="False" IsReadOnly="False" IsRequired="False"><br>
+&lt;Module Token="EmployeeManagement" QualifiedToken="EmployeeManagement" /><br>
+&lt;Component Token="Employee" QualifiedToken="EmployeeManagement/Employee" /><br>
+&lt;Type Token="Default" QualifiedToken="EmployeeManagement/Employee/Default" /><br>
+&lt;/Field><br>
+&lt;!-- SNIP --><br>
+&lt;/Fields><br>
+&lt;Operations><br>
+&lt;Operation Token="Delete" QualifiedToken="EmployeeManagement/Employee/Default/Delete"><br>
+&lt;Module Token="EmployeeManagement" QualifiedToken="EmployeeManagement" /><br>
+&lt;Component Token="Employee" QualifiedToken="EmployeeManagement/Employee" /><br>
+&lt;Type Token="Default" QualifiedToken="EmployeeManagement/Employee/Default" /><br>
+&lt;Validator Token="CanDelete" QualifiedToken="EmployeeManagement/Employee/Default/CanDelete" /><br>
+&lt;/Operation><br>
+&lt;!-- SNIP --><br>
+&lt;/Operations><br>
+&lt;/Type><br>
+&lt;!-- SNIP --><br>
+&lt;/Types><br>
+&lt;/Component><br>
 
 ## GetType
 
@@ -321,71 +321,71 @@ GET /API/2.0/Meta/EmployeeManagement/Employee/Default?token=/wEFKnpvbmRhfDY1YzJi
 ### Sample Response
 
 HTTP/1.1 200 OK<br>
-<Type Token="Default" QualifiedToken="EmployeeManagement/Employee/Default" IsReadOnly="False"><br>
-<Module Token="EmployeeManagement" QualifiedToken="EmployeeManagement" /><br>
-<Component Token="Employee" QualifiedToken="EmployeeManagement/Employee" /><br>
-<IdentityField Token="InstanceId" QualifiedToken="EmployeeManagement/Employee/Default/InstanceId" /><br>
-<Fields><br>
-<Field Token="InstanceId" QualifiedToken="EmployeeManagement/Employee/Default/InstanceId" FieldType="Relation" IsMultiValue="False" IsReadOnly="True" IsRequired="True"><br>
-<Module Token="EmployeeManagement" QualifiedToken="EmployeeManagement" /><br>
-<Component Token="Employee" QualifiedToken="EmployeeManagement/Employee" /><br>
-<Type Token="Default" QualifiedToken="EmployeeManagement/Employee/Default" /><br>
-<RelatedComponent Token="Employee" QualifiedToken="EmployeeManagement/Employee" /><br>
-<RelatedType Token="Default" QualifiedToken="EmployeeManagement/Employee/Default" /><br>
-</Field><br>
-<Field Token="WorkflowTemplate" QualifiedToken="EmployeeManagement/Employee/Default/WorkflowTemplate" FieldType="Relation" IsMultiValue="False" IsReadOnly="False" IsRequired="True"><br>
-<Module Token="EmployeeManagement" QualifiedToken="EmployeeManagement" /><br>
-<Component Token="Employee" QualifiedToken="EmployeeManagement/Employee" /><br>
-<Type Token="Default" QualifiedToken="EmployeeManagement/Employee/Default" /><br>
-<RelatedComponent Token="WorkflowTemplates" QualifiedToken="Global/WorkflowTemplates" /><br>
-<RelatedType Token="Employee" QualifiedToken="Global/WorkflowTemplates/Employee" /><br>
-</Field><br>
-<Field Token="FirstName" QualifiedToken="EmployeeManagement/Employee/Default/FirstName" FieldType="String" IsMultiValue="False" IsReadOnly="False" IsRequired="False"><br>
-<Module Token="EmployeeManagement" QualifiedToken="EmployeeManagement" /><br>
-<Component Token="Employee" QualifiedToken="EmployeeManagement/Employee" /><br>
-<Type Token="Default" QualifiedToken="EmployeeManagement/Employee/Default" /><br>
-</Field><br>
-<Field Token="LastName" QualifiedToken="EmployeeManagement/Employee/Default/LastName" FieldType="String" IsMultiValue="False" IsReadOnly="False" IsRequired="False"><br>
-<Module Token="EmployeeManagement" QualifiedToken="EmployeeManagement" /><br>
-<Component Token="Employee" QualifiedToken="EmployeeManagement/Employee" /><br>
-<Type Token="Default" QualifiedToken="EmployeeManagement/Employee/Default" /><br>
-</Field><br>
-<Field Token="Password" QualifiedToken="EmployeeManagement/Employee/Default/Password" FieldType="String" IsMultiValue="False" IsReadOnly="False" IsRequired="False"><br>
-<Module Token="EmployeeManagement" QualifiedToken="EmployeeManagement" /><br>
-<Component Token="Employee" QualifiedToken="EmployeeManagement/Employee" /><br>
-<Type Token="Default" QualifiedToken="EmployeeManagement/Employee/Default" /><br>
-</Field><br>
-<Field Token="PrimaryDivision" QualifiedToken="EmployeeManagement/Employee/Default/PrimaryDivision" FieldType="Relation" IsMultiValue="False" IsReadOnly="False" IsRequired="False"><br>
-<Module Token="EmployeeManagement" QualifiedToken="EmployeeManagement" /><br>
-<Component Token="Employee" QualifiedToken="EmployeeManagement/Employee" /><br>
-<Type Token="Default" QualifiedToken="EmployeeManagement/Employee/Default" /><br>
-<RelatedComponent Token="EmployeeDivision" QualifiedToken="EmployeeManagement/EmployeeDivision" /><br>
-<RelatedType Token="Default" QualifiedToken="EmployeeManagement/EmployeeDivision/Default" /><br>
-</Field><br>
-<Field Token="Profiles" QualifiedToken="EmployeeManagement/Employee/Default/Profiles" FieldType="Relation" IsMultiValue="True" IsReadOnly="False" IsRequired="False"><br>
-<Module Token="EmployeeManagement" QualifiedToken="EmployeeManagement" /><br>
-<Component Token="Employee" QualifiedToken="EmployeeManagement/Employee" /><br>
-<Type Token="Default" QualifiedToken="EmployeeManagement/Employee/Default" /><br>
-<RelatedComponent Token="EmployeeProfile" QualifiedToken="EmployeeManagement/EmployeeProfile" /><br>
-<RelatedType Token="Default" QualifiedToken="EmployeeManagement/EmployeeProfile/Default" /><br>
-</Field><br>
-<Field Token="UserName" QualifiedToken="EmployeeManagement/Employee/Default/UserName" FieldType="String" IsMultiValue="False" IsReadOnly="False" IsRequired="False"><br>
-<Module Token="EmployeeManagement" QualifiedToken="EmployeeManagement" /><br>
-<Component Token="Employee" QualifiedToken="EmployeeManagement/Employee" /><br>
-<Type Token="Default" QualifiedToken="EmployeeManagement/Employee/Default" /><br>
-</Field><br>
-<!-- SNIP --><br>
-</Fields><br>
-<Operations><br>
-<Operation Token="Delete" QualifiedToken="EmployeeManagement/Employee/Default/Delete"><br>
-<Module Token="EmployeeManagement" QualifiedToken="EmployeeManagement" /><br>
-<Component Token="Employee" QualifiedToken="EmployeeManagement/Employee" /><br>
-<Type Token="Default" QualifiedToken="EmployeeManagement/Employee/Default" /><br>
-<Validator Token="CanDelete" QualifiedToken="EmployeeManagement/Employee/Default/CanDelete" /><br>
-</Operation><br>
-<!-- SNIP --><br>
-</Operations><br>
-</Type><br>
+&lt;Type Token="Default" QualifiedToken="EmployeeManagement/Employee/Default" IsReadOnly="False"><br>
+&lt;Module Token="EmployeeManagement" QualifiedToken="EmployeeManagement" /><br>
+&lt;Component Token="Employee" QualifiedToken="EmployeeManagement/Employee" /><br>
+&lt;IdentityField Token="InstanceId" QualifiedToken="EmployeeManagement/Employee/Default/InstanceId" /><br>
+&lt;Fields><br>
+&lt;Field Token="InstanceId" QualifiedToken="EmployeeManagement/Employee/Default/InstanceId" FieldType="Relation" IsMultiValue="False" IsReadOnly="True" IsRequired="True"><br>
+&lt;Module Token="EmployeeManagement" QualifiedToken="EmployeeManagement" /><br>
+&lt;Component Token="Employee" QualifiedToken="EmployeeManagement/Employee" /><br>
+&lt;Type Token="Default" QualifiedToken="EmployeeManagement/Employee/Default" /><br>
+&lt;RelatedComponent Token="Employee" QualifiedToken="EmployeeManagement/Employee" /><br>
+&lt;RelatedType Token="Default" QualifiedToken="EmployeeManagement/Employee/Default" /><br>
+&lt;/Field><br>
+&lt;Field Token="WorkflowTemplate" QualifiedToken="EmployeeManagement/Employee/Default/WorkflowTemplate" FieldType="Relation" IsMultiValue="False" IsReadOnly="False" IsRequired="True"><br>
+&lt;Module Token="EmployeeManagement" QualifiedToken="EmployeeManagement" /><br>
+&lt;Component Token="Employee" QualifiedToken="EmployeeManagement/Employee" /><br>
+&lt;Type Token="Default" QualifiedToken="EmployeeManagement/Employee/Default" /><br>
+&lt;RelatedComponent Token="WorkflowTemplates" QualifiedToken="Global/WorkflowTemplates" /><br>
+&lt;RelatedType Token="Employee" QualifiedToken="Global/WorkflowTemplates/Employee" /><br>
+&lt;/Field><br>
+&lt;Field Token="FirstName" QualifiedToken="EmployeeManagement/Employee/Default/FirstName" FieldType="String" IsMultiValue="False" IsReadOnly="False" IsRequired="False"><br>
+&lt;Module Token="EmployeeManagement" QualifiedToken="EmployeeManagement" /><br>
+&lt;Component Token="Employee" QualifiedToken="EmployeeManagement/Employee" /><br>
+&lt;Type Token="Default" QualifiedToken="EmployeeManagement/Employee/Default" /><br>
+&lt;/Field><br>
+&lt;Field Token="LastName" QualifiedToken="EmployeeManagement/Employee/Default/LastName" FieldType="String" IsMultiValue="False" IsReadOnly="False" IsRequired="False"><br>
+&lt;Module Token="EmployeeManagement" QualifiedToken="EmployeeManagement" /><br>
+&lt;Component Token="Employee" QualifiedToken="EmployeeManagement/Employee" /><br>
+&lt;Type Token="Default" QualifiedToken="EmployeeManagement/Employee/Default" /><br>
+&lt;/Field><br>
+&lt;Field Token="Password" QualifiedToken="EmployeeManagement/Employee/Default/Password" FieldType="String" IsMultiValue="False" IsReadOnly="False" IsRequired="False"><br>
+&lt;Module Token="EmployeeManagement" QualifiedToken="EmployeeManagement" /><br>
+&lt;Component Token="Employee" QualifiedToken="EmployeeManagement/Employee" /><br>
+&lt;Type Token="Default" QualifiedToken="EmployeeManagement/Employee/Default" /><br>
+&lt;/Field><br>
+&lt;Field Token="PrimaryDivision" QualifiedToken="EmployeeManagement/Employee/Default/PrimaryDivision" FieldType="Relation" IsMultiValue="False" IsReadOnly="False" IsRequired="False"><br>
+&lt;Module Token="EmployeeManagement" QualifiedToken="EmployeeManagement" /><br>
+&lt;Component Token="Employee" QualifiedToken="EmployeeManagement/Employee" /><br>
+&lt;Type Token="Default" QualifiedToken="EmployeeManagement/Employee/Default" /><br>
+&lt;RelatedComponent Token="EmployeeDivision" QualifiedToken="EmployeeManagement/EmployeeDivision" /><br>
+&lt;RelatedType Token="Default" QualifiedToken="EmployeeManagement/EmployeeDivision/Default" /><br>
+&lt;/Field><br>
+&lt;Field Token="Profiles" QualifiedToken="EmployeeManagement/Employee/Default/Profiles" FieldType="Relation" IsMultiValue="True" IsReadOnly="False" IsRequired="False"><br>
+&lt;Module Token="EmployeeManagement" QualifiedToken="EmployeeManagement" /><br>
+&lt;Component Token="Employee" QualifiedToken="EmployeeManagement/Employee" /><br>
+&lt;Type Token="Default" QualifiedToken="EmployeeManagement/Employee/Default" /><br>
+&lt;RelatedComponent Token="EmployeeProfile" QualifiedToken="EmployeeManagement/EmployeeProfile" /><br>
+&lt;RelatedType Token="Default" QualifiedToken="EmployeeManagement/EmployeeProfile/Default" /><br>
+&lt;/Field><br>
+&lt;Field Token="UserName" QualifiedToken="EmployeeManagement/Employee/Default/UserName" FieldType="String" IsMultiValue="False" IsReadOnly="False" IsRequired="False"><br>
+&lt;Module Token="EmployeeManagement" QualifiedToken="EmployeeManagement" /><br>
+&lt;Component Token="Employee" QualifiedToken="EmployeeManagement/Employee" /><br>
+&lt;Type Token="Default" QualifiedToken="EmployeeManagement/Employee/Default" /><br>
+&lt;/Field><br>
+&lt;!-- SNIP --><br>
+&lt;/Fields><br>
+&lt;Operations><br>
+&lt;Operation Token="Delete" QualifiedToken="EmployeeManagement/Employee/Default/Delete"><br>
+&lt;Module Token="EmployeeManagement" QualifiedToken="EmployeeManagement" /><br>
+&lt;Component Token="Employee" QualifiedToken="EmployeeManagement/Employee" /><br>
+&lt;Type Token="Default" QualifiedToken="EmployeeManagement/Employee/Default" /><br>
+&lt;Validator Token="CanDelete" QualifiedToken="EmployeeManagement/Employee/Default/CanDelete" /><br>
+&lt;/Operation><br>
+&lt;!-- SNIP --><br>
+&lt;/Operations><br>
+&lt;/Type><br>
 
 ## GetField
 
@@ -412,11 +412,11 @@ GET /API/2.0/Meta/EmployeeManagement/Employee/Default/FirstName?token=/wEFKnpvbm
 ### Sample Response
 
 HTTP/1.1 200 OK<br>
-<Field Token="FirstName" QualifiedToken="EmployeeManagement/Employee/Default/FirstName" FieldType="String" IsMultiValue="False" IsReadOnly="False" IsRequired="False"><br>
-<Module Token="EmployeeManagement" QualifiedToken="EmployeeManagement" /><br>
-<Component Token="Employee" QualifiedToken="EmployeeManagement/Employee" /><br>
-<Type Token="Default" QualifiedToken="EmployeeManagement/Employee/Default" /><br>
-</Field><br>
+&lt;Field Token="FirstName" QualifiedToken="EmployeeManagement/Employee/Default/FirstName" FieldType="String" IsMultiValue="False" IsReadOnly="False" IsRequired="False"><br>
+&lt;Module Token="EmployeeManagement" QualifiedToken="EmployeeManagement" /><br>
+&lt;Component Token="Employee" QualifiedToken="EmployeeManagement/Employee" /><br>
+&lt;Type Token="Default" QualifiedToken="EmployeeManagement/Employee/Default" /><br>
+&lt;/Field><br>
 
 ## GetOperation
 
@@ -443,9 +443,9 @@ GET /API/2.0/Meta/EmployeeManagement/Employee/Default/Delete?token=/wEFKnpvbmRhf
 ### Sample Response
 
 HTTP/1.1 200 OK<br>
-<Operation Token="Delete" QualifiedToken="EmployeeManagement/Employee/Default/Delete"><br>
-<Module Token="EmployeeManagement" QualifiedToken="EmployeeManagement" /><br>
-<Component Token="Employee" QualifiedToken="EmployeeManagement/Employee" /><br>
-<Type Token="Default" QualifiedToken="EmployeeManagement/Employee/Default" /><br>
-<Validator Token="CanDelete" QualifiedToken="EmployeeManagement/Employee/Default/CanDelete" /><br>
-</Operation><br>
+&lt;Operation Token="Delete" QualifiedToken="EmployeeManagement/Employee/Default/Delete"><br>
+&lt;Module Token="EmployeeManagement" QualifiedToken="EmployeeManagement" /><br>
+&lt;Component Token="Employee" QualifiedToken="EmployeeManagement/Employee" /><br>
+&lt;Type Token="Default" QualifiedToken="EmployeeManagement/Employee/Default" /><br>
+&lt;Validator Token="CanDelete" QualifiedToken="EmployeeManagement/Employee/Default/CanDelete" /><br>
+&lt;/Operation><br>
