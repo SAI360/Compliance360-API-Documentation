@@ -1,4 +1,4 @@
-# REST API - Metadata Documentation
+# API - Metadata Documentation
 
 Metadata is used to describe the business objects within the Compliance 360 system. The metadata access methods allow a caller to read the definitions of the business data and how it relates to other elements of data.
 
@@ -23,7 +23,7 @@ GET /API/2.0/Meta?token=/wEFKnpvbmRhfDY1YzJiNTFhLTFhYTMtNGYzZC05YjFhLWY0Njk0NmI2
 ### Sample Response
 
 HTTP/1.1 200 OK<br>
-<Modules><br>
+&lt;Modules><br>
 <Module Token="EmployeeManagement" QualifiedToken="EmployeeManagement"><br>
 <Components><br>
 <Component Token="Employee" QualifiedToken="EmployeeManagement/Employee"><br>
