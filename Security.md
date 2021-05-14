@@ -1,6 +1,6 @@
-# REST API - Security Documentation
+# API - Security Documentation
 
-Before a client can authenticate with the Compliance 360 REST API, the client must resolve the correct host that will be servicing requests for the specific organization. Once that host is resolved, all requests should be sent to that specific host including Login requests. To request a user context token, which is required for all data and metadata requests, you must use the Login method on the correct host.
+Before a client can authenticate with the Compliance 360 API, the client must resolve the correct host that will be servicing requests for the specific organization. Once that host is resolved, all requests should be sent to that specific host including Login requests. To request a user context token, which is required for all data and metadata requests, you must use the Login method on the correct host.
 
 ## OrganizationHost
 
