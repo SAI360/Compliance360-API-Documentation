@@ -1,12 +1,8 @@
 # API Documentation
 
-The Compliance 360 API adheres to [REST](http://en.wikipedia.org/wiki/REST) standards. You reference particular resources by means of the URL path (the part of the URL after the host name). The response from the Compliance 360 API includes IDs that tie related entities together.
+The Compliance 360 API uses the GET verb to retrieve information and the POST verb to insert, update and delete information.
 
-You use standard HTTP verbs to access the Compliance 360 API with different methods. To retrieve information, use the GET verb. The POST verb is used to insert, update and delete information.
-
-## Calling Resources
-
-REST resources are called using standard HTTP methods. The Compliance 360 REST API sources are split into five distinct categories. All REST API resources have a version as part of the URL which determines which version of the API to use. API versions do not correspond to releases of the Compliance 360 application and is only incremented to preserve backward compatibility within the API.
+The API sources are split into five distinct categories. All API resources have a version as part of the URL which determines which version of the API to use. API versions do not correspond to releases of the Compliance 360 application and is only incremented to preserve backward compatibility within the API.
 
 | Category | URL | Description |
 | --- | --- | --- |
