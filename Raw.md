@@ -15,7 +15,7 @@ GET /API/version/Raw/module/component/type/id/field?token=token HTTP/1.1
 
 | Parameter | Type | Required | Description |
 | --- | --- | --- | --- |
-| token | string | Yes | The user context token obtained using [Login](security.html#Login). |
+| token | string | Yes | The user context token obtained using [Authenticate](Security.md#authenticate). |
 | module | string | Yes | The token of the module the entity belongs to.  This token can be obtained using [Metadata](meta.html). |
 | component | string | Yes | The token of the component the entity belongs to.  This token can be obtained using [Metadata](meta.html). |
 | type | string | Yes | The token of the type the entity belongs to.  This token can be obtained using [Metadata](meta.html). |
@@ -23,31 +23,31 @@ GET /API/version/Raw/module/component/type/id/field?token=token HTTP/1.1
 | field | string | Yes | The token of the field to retrieve. This token can be obtained using [Metadata](meta.html). |
 
 ### Sample Request
-
-GET /API/2.0/Raw/Documents/MetaDocument/Default/30/FileContent?token=/wEFKnpvbmRhfDY1YzJiNTFhLTFhYTMtNGYzZC05YjFhLWY0Njk0NmI2YWU5YQ== HTTP/1.1<br>
-Accept: */*<br>
-
+```
+GET /API/2.0/Raw/Documents/MetaDocument/Default/30/FileContent?token=/wEFKnpvbmRhfDY1YzJiNTFhLTFhYTMtNGYzZC05YjFhLWY0Njk0NmI2YWU5YQ==<br>
+Accept: */*
+```
 ### Sample Response
-
-HTTP/1.1 200 OK<br>
-Content-Type: image/jpeg<br>
-Content-Disposition: attachment; filename=example.jpg<br>
-Content-Length: 13598<br>
+```
+HTTP/1.1 200 OK
+Content-Type: image/jpeg
+Content-Disposition: attachment; filename=example.jpg
+Content-Length: 13598
 <...binary data...>
-
+```
 ## SetStream
 
 Update the binary file contents for the given field on a specific entity.
 
 ### Syntax
 
-POST /API/version/Raw/module/component/type/id/field?token=token HTTP/1.1
+POST /API/version/Raw/module/component/type/id/field?token=token
 
 ### Parameters
 
 | Parameter | Type | Required | Description |
 | --- | --- | --- | --- |
-| token | string | Yes | The user context token obtained using [Login](security.html#Login). |
+| token | string | Yes | The user context token obtained using [Authenticate](Security.md#authenticate). |
 | module | string | Yes | The token of the module the entity belongs to.  This token can be obtained using [Metadata](meta.html). |
 | component | string | Yes | The token of the component the entity belongs to.  This token can be obtained using [Metadata](meta.html). |
 | type | string | Yes | The token of the type the entity belongs to.  This token can be obtained using [Metadata](meta.html). |
@@ -55,13 +55,14 @@ POST /API/version/Raw/module/component/type/id/field?token=token HTTP/1.1
 | field | string | Yes | The token of the field to update. This token can be obtained using [Metadata](meta.html). |
 
 ### Sample Request
-
-POST /API/2.0/Raw/Documents/MetaDocument/Default/30/FileContent?token=/wEFKnpvbmRhfDY1YzJiNTFhLTFhYTMtNGYzZC05YjFhLWY0Njk0NmI2YWU5YQ== HTTP/1.1<br>
-Content-Type: image/jpeg<br>
-Content-Disposition: attachment; filename=example.jpg<br>
-Content-Length: 13598<br>
+```
+POST /API/2.0/Raw/Documents/MetaDocument/Default/30/FileContent?token=/wEFKnpvbmRhfDY1YzJiNTFhLTFhYTMtNGYzZC05YjFhLWY0Njk0NmI2YWU5YQ== HTTP/1.1
+Content-Type: image/jpeg
+Content-Disposition: attachment; filename=example.jpg
+Content-Length: 13598
 <...binary data...>
-
+```
 ### Sample Response
-
+```
 HTTP/1.1 200 OK<br>
+```
