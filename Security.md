@@ -7,9 +7,9 @@ Before a client can authenticate with the Compliance 360 API, the client must re
 Get the host to use for all subsequent requests (from Login to Logout) for a given organization.
 
 ### Syntax
-
-GET /API/version/Security/OrganizationHost?organization=organization HTTP/1.1
-
+'''
+GET /API/version/Security/OrganizationHost?organization=organization
+'''
 ### Parameters
 
 | Parameter | Type | Required | Description |
@@ -18,7 +18,7 @@ GET /API/version/Security/OrganizationHost?organization=organization HTTP/1.1
 
 ### Sample Request
 
-GET /API/2.0/Security/OrganizationHost?organization=myorg HTTP/1.1
+GET /API/2.0/Security/OrganizationHost?organization=myorg 
 
 ### Sample Response
 
@@ -33,7 +33,7 @@ Authenticate with the Compliance 360 API. The value of the token returned is use
 
 ### Syntax
 
-GET /API/version/Security/Authenticate?organization=organization &integrationkey=integrationkey &culture=culture HTTP/1.1
+GET /API/version/Security/Authenticate?organization=organization &integrationkey=integrationkey &culture=culture
 
 ### Parameters
 
@@ -60,7 +60,7 @@ Authenticate as a user with the Compliance 360 API. The value of the token retur
 
 ### Syntax
 
-GET /API/version/Security/Login?organization=organization &username=username &password=password &culture=culture HTTP/1.1
+GET /API/version/Security/Login?organization=organization &username=username &password=password &culture=culture
 
 ### Parameters
 
@@ -73,7 +73,7 @@ GET /API/version/Security/Login?organization=organization &username=username &pa
 
 ### Sample Request
 
-GET /API/2.0/Security/Login?organization=myorg&username=joe&password=password&culture=en-us HTTP/1.1
+GET /API/2.0/Security/Login?organization=myorg&username=joe&password=password&culture=en-us
 
 ### Sample Response
 
