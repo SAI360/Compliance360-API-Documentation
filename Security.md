@@ -1,6 +1,6 @@
 # API - Security Documentation
 
-Before a client can authenticate with the Compliance 360 API, the client must resolve the correct host that will be servicing requests for the specific organization. Once that host is resolved, all requests should be sent to that specific host including Login requests. To request a user context token, which is required for all data and metadata requests, you must use the Login method on the correct host.
+Before a client can authenticate with the Compliance 360 API, the client must resolve the correct host that will be servicing requests for the specific organization. Once that host is resolved, all requests should be sent to that specific host including Authenticate requests. To request a user context token, which is required for all data and metadata requests, you must use the Authenticate method on the correct host.
 
 ## OrganizationHost
 
@@ -27,7 +27,34 @@ HTTP/1.1 200 OK<br>
 <Host>https://secure.compliance360.com</Host><br>
 </OrganizationInfo><br>
 
-## Login
+## Authenticate
+
+Authenticate with the Compliance 360 API. The value of the token returned is used for all subsequent calls to the API during the session.
+
+### Syntax
+
+GET /API/version/Security/Authenticate?organization=organization &integrationkey=integrationkey &culture=culture HTTP/1.1
+
+### Parameters
+
+| Parameter | Type | Required | Description |
+| --- | --- | --- | --- |
+| organization | string | Yes | The name of the organization to authenticate under. |
+| integrationkey | string | Yes | The Integration Key generated via the C360 Integrations menu. |
+| culture | string | No | The culture to use for the session (usually en-us). |
+
+### Sample Request
+
+GET /API/2.0/Security/OrganizationHost?organization=myorg&integrationkey=MPI053EIHLHHTJZUWE8TOJU5HXO53FIIHK1HWGZR2IO&culture=en-us HTTP/1.1
+
+### Sample Response
+
+HTTP/1.1 200 OK<br>
+<Token><br>
+<Value>/wEFKnpvbmRhfDY1YzJiNTFhLTFhYTMtNGYzZC05YjFhLWY0Njk0NmI2YWU5YQ==</Value><br>
+</Token><br>
+
+## Login (deprecated)
 
 Authenticate as a user with the Compliance 360 REST API. The value of the token returned is used for all subsequent calls to the API during the session.
 
@@ -55,7 +82,7 @@ HTTP/1.1 200 OK<br>
 <Value>/wEFKnpvbmRhfDY1YzJiNTFhLTFhYTMtNGYzZC05YjFhLWY0Njk0NmI2YWU5YQ==</Value><br>
 </Token><br>
 
-### Post Syntax (Recommended)
+### Post Syntax
 
 #### Post Syntax with XML
 
