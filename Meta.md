@@ -15,13 +15,13 @@ GET /API/version/Meta?token=token
 | Parameter | Type | Required | Description |
 | --- | --- | --- | --- |
 | token | string | Yes | The user context token obtained using [Authenticate](security.html#Authenticate). |
-```
-### Sample Request
 
+### Sample Request
+```
 GET /API/2.0/Meta?token=/wEFKnpvbmRhfDY1YzJiNTFhLTFhYTMtNGYzZC05YjFhLWY0Njk0NmI2YWU5YQ==
 ```
 ### Sample Response
-
+```
 HTTP/1.1 200 OK
 &lt;Modules><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&lt;Module Token="EmployeeManagement" QualifiedToken="EmployeeManagement"><br>
@@ -102,7 +102,7 @@ HTTP/1.1 200 OK
 &nbsp;&nbsp;&nbsp;&nbsp;&lt;/Module><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&lt;!-- SNIP --><br>
 &lt;/Modules><br>
-
+```
 ## GetModule
 
 Get a list of all the components, types and fields in the given module.
