@@ -24,8 +24,8 @@ GET /API/2.0/Meta?token=/wEFKnpvbmRhfDY1YzJiNTFhLTFhYTMtNGYzZC05YjFhLWY0Njk0NmI2
 
 HTTP/1.1 200 OK<br>
 &lt;Modules><br>
-&lt;Module Token="EmployeeManagement" QualifiedToken="EmployeeManagement"><br>
-&lt;Components><br>
+    &lt;Module Token="EmployeeManagement" QualifiedToken="EmployeeManagement"><br>
+        &lt;Components><br>
 &lt;Component Token="Employee" QualifiedToken="EmployeeManagement/Employee"><br>
 &lt;Module Token="EmployeeManagement" QualifiedToken="EmployeeManagement" /><br>
 &lt;Types><br>
