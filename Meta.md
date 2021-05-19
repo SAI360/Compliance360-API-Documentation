@@ -14,12 +14,12 @@ GET /API/version/Meta?token=token
 
 | Parameter | Type | Required | Description |
 | --- | --- | --- | --- |
-| token | string | Yes | The user context token obtained using [Login](security.html#Login). |
-
+| token | string | Yes | The user context token obtained using [Authenticate](security.html#Authenticate). |
+```
 ### Sample Request
 
 GET /API/2.0/Meta?token=/wEFKnpvbmRhfDY1YzJiNTFhLTFhYTMtNGYzZC05YjFhLWY0Njk0NmI2YWU5YQ==
-
+```
 ### Sample Response
 
 HTTP/1.1 200 OK
