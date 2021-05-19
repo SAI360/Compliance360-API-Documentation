@@ -7,9 +7,9 @@ Before a client can authenticate with the Compliance 360 API, the client must re
 Get the host to use for all subsequent requests (from Login to Logout) for a given organization.
 
 ### Syntax
-'''
+
 GET /API/version/Security/OrganizationHost?organization=organization
-'''
+
 ### Parameters
 
 | Parameter | Type | Required | Description |
@@ -17,16 +17,16 @@ GET /API/version/Security/OrganizationHost?organization=organization
 | organization | string | Yes | The name of the organization to authenticate under. |
 
 ### Sample Request
-
+```
 GET /API/2.0/Security/OrganizationHost?organization=myorg 
-
+```
 ### Sample Response
-
+```
 HTTP/1.1 200 OK<br>
 <OrganizationInfo><br>
 <Host>https://secure.compliance360.com</Host><br>
 </OrganizationInfo><br>
-
+```
 ## Authenticate
 
 Authenticate with the Compliance 360 API. The value of the token returned is used for all subsequent calls to the API during the session.
@@ -44,16 +44,16 @@ GET /API/version/Security/Authenticate?organization=organization &integrationkey
 | culture | string | No | The culture to use for the session (usually en-us). |
 
 ### Sample Request
-
-GET /API/2.0/Security/Authenticate?organization=myorg&integrationkey=MPI053EIHLHHTJZUWE8TOJU5HXO53FIIHK1HWGZR2IO&culture=en-us HTTP/1.1
-
+```
+GET /API/2.0/Security/Authenticate?organization=myorg&integrationkey=MPI053EIHLHHTJZUWE8TOJU5HXO53FIIHK1HWGZR2IO&culture=en-us
+```
 ### Sample Response
-
+```
 HTTP/1.1 200 OK<br>
 <Token><br>
 <Value>/wEFKnpvbmRhfDY1YzJiNTFhLTFhYTMtNGYzZC05YjFhLWY0Njk0NmI2YWU5YQ==</Value><br>
 </Token><br>
-
+```
 ## Login (deprecated)
 
 Authenticate as a user with the Compliance 360 API. The value of the token returned is used for all subsequent calls to the API during the session.
@@ -72,16 +72,16 @@ GET /API/version/Security/Login?organization=organization &username=username &pa
 | culture | string | No | The culture to use for the session (usually en-us). |
 
 ### Sample Request
-
+```
 GET /API/2.0/Security/Login?organization=myorg&username=joe&password=password&culture=en-us
-
+```
 ### Sample Response
-
+```
 HTTP/1.1 200 OK<br>
 <Token><br>
 <Value>/wEFKnpvbmRhfDY1YzJiNTFhLTFhYTMtNGYzZC05YjFhLWY0Njk0NmI2YWU5YQ==</Value><br>
 </Token><br>
-
+```
 ### Post Syntax
 
 #### Post Syntax with XML
@@ -112,41 +112,42 @@ End a Compliance 360 API session and invalidate the user context token
 
 ### Syntax
 
-GET /API/version/Security/Logout?token=token HTTP/1.1
+GET /API/version/Security/Logout?token=token
 
 ### Parameters
 
 | Parameter | Type | Required | Description |
 | --- | --- | --- | --- |
-| token | string | Yes | The user context token obtained using [Login](#login). |
+| token | string | Yes | The user context token obtained using [Authenticate](#authenticate). |
 
 ### Sample Request
-
-GET /API/2.0/Security/Logout?token=/wEFKnpvbmRhfDY1YzJiNTFhLTFhYTMtNGYzZC05YjFhLWY0Njk0NmI2YWU5YQ== HTTP/1.1
-
+```
+GET /API/2.0/Security/Logout?token=/wEFKnpvbmRhfDY1YzJiNTFhLTFhYTMtNGYzZC05YjFhLWY0Njk0NmI2YWU5YQ==
+```
 ### Sample Response
-
+```
 HTTP/1.1 200 OK
-
+```
 ## GetCulture
 
 Get the current culture of the user context.
 
 ### Syntax
 
-GET /API/version/Security/Culture?token=token HTTP/1.1
+GET /API/version/Security/Culture?token=token
 
 ### Parameters
 
 | Parameter | Type | Required | Description |
 | --- | --- | --- | --- |
-| token | string | Yes | The user context token obtained using [Login](#login). |
+| token | string | Yes | The user context token obtained using [Authenticate](#authenticate). |
 
 ### Sample Request
-
-GET /API/2.0/Security/Culture?token=/wEFKnpvbmRhfDY1YzJiNTFhLTFhYTMtNGYzZC05YjFhLWY0Njk0NmI2YWU5YQ== HTTP/1.1
-
+```
+GET /API/2.0/Security/Culture?token=/wEFKnpvbmRhfDY1YzJiNTFhLTFhYTMtNGYzZC05YjFhLWY0Njk0NmI2YWU5YQ==
+```
 ### Sample Response
-
+```
 HTTP/1.1 200 OK<br>
 <string>en-us</string>
+```
