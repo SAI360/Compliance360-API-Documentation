@@ -56,7 +56,7 @@ HTTP/1.1 200 OK<br>
 
 ## Login (deprecated)
 
-Authenticate as a user with the Compliance 360 REST API. The value of the token returned is used for all subsequent calls to the API during the session.
+Authenticate as a user with the Compliance 360 API. The value of the token returned is used for all subsequent calls to the API during the session.
 
 ### Syntax
 
@@ -108,7 +108,7 @@ Content-Type: application/json<br>
 
 ## Logout
 
-End a Compliance 360 REST API session and invalidate the user context token
+End a Compliance 360 API session and invalidate the user context token
 
 ### Syntax
 
