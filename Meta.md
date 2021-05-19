@@ -8,7 +8,7 @@ Get a list of all the modules, components, types and fields in the Compliance 36
 
 ### Syntax
 
-GET /API/version/Meta?token=token HTTP/1.1
+GET /API/version/Meta?token=token
 
 ### Parameters
 
@@ -18,7 +18,7 @@ GET /API/version/Meta?token=token HTTP/1.1
 
 ### Sample Request
 
-GET /API/2.0/Meta?token=/wEFKnpvbmRhfDY1YzJiNTFhLTFhYTMtNGYzZC05YjFhLWY0Njk0NmI2YWU5YQ== HTTP/1.1
+GET /API/2.0/Meta?token=/wEFKnpvbmRhfDY1YzJiNTFhLTFhYTMtNGYzZC05YjFhLWY0Njk0NmI2YWU5YQ==
 
 ### Sample Response
 
@@ -109,7 +109,7 @@ Get a list of all the components, types and fields in the given module.
 
 ### Syntax
 
-GET /API/version/Meta/module?token=token HTTP/1.1
+GET /API/version/Meta/module?token=token
 
 ### Parameters
 
@@ -120,7 +120,7 @@ GET /API/version/Meta/module?token=token HTTP/1.1
 
 ### Sample Request
 
-GET /API/2.0/Meta/EmployeeManagement?token=/wEFKnpvbmRhfDY1YzJiNTFhLTFhYTMtNGYzZC05YjFhLWY0Njk0NmI2YWU5YQ== HTTP/1.1
+GET /API/2.0/Meta/EmployeeManagement?token=/wEFKnpvbmRhfDY1YzJiNTFhLTFhYTMtNGYzZC05YjFhLWY0Njk0NmI2YWU5YQ==
 
 ### Sample Response
 
@@ -208,7 +208,7 @@ Get a list of all the types and fields in the given component.
 
 ### Syntax
 
-GET /API/version/Meta/module/component?token=token HTTP/1.1
+GET /API/version/Meta/module/component?token=token
 
 ### Parameters
 
@@ -220,7 +220,7 @@ GET /API/version/Meta/module/component?token=token HTTP/1.1
 
 ### Sample Request
 
-GET /API/2.0/Meta/EmployeeManagement/Employee?token=/wEFKnpvbmRhfDY1YzJiNTFhLTFhYTMtNGYzZC05YjFhLWY0Njk0NmI2YWU5YQ== HTTP/1.1
+GET /API/2.0/Meta/EmployeeManagement/Employee?token=/wEFKnpvbmRhfDY1YzJiNTFhLTFhYTMtNGYzZC05YjFhLWY0Njk0NmI2YWU5YQ==
 
 ### Sample Response
 
@@ -303,7 +303,7 @@ Get a list of all the fields in the given type.
 
 ### Syntax
 
-GET /API/version/Meta/module/component/type?token=token HTTP/1.1
+GET /API/version/Meta/module/component/type?token=token
 
 ### Parameters
 
@@ -316,7 +316,7 @@ GET /API/version/Meta/module/component/type?token=token HTTP/1.1
 
 ### Sample Request
 
-GET /API/2.0/Meta/EmployeeManagement/Employee/Default?token=/wEFKnpvbmRhfDY1YzJiNTFhLTFhYTMtNGYzZC05YjFhLWY0Njk0NmI2YWU5YQ== HTTP/1.1
+GET /API/2.0/Meta/EmployeeManagement/Employee/Default?token=/wEFKnpvbmRhfDY1YzJiNTFhLTFhYTMtNGYzZC05YjFhLWY0Njk0NmI2YWU5YQ==
 
 ### Sample Response
 
@@ -393,7 +393,7 @@ Get details for the given field.
 
 ### Syntax
 
-GET /API/version/Meta/module/component/type/field?token=token HTTP/1.1
+GET /API/version/Meta/module/component/type/field?token=token
 
 ### Parameters
 
@@ -407,7 +407,7 @@ GET /API/version/Meta/module/component/type/field?token=token HTTP/1.1
 
 ### Sample Request
 
-GET /API/2.0/Meta/EmployeeManagement/Employee/Default/FirstName?token=/wEFKnpvbmRhfDY1YzJiNTFhLTFhYTMtNGYzZC05YjFhLWY0Njk0NmI2YWU5YQ== HTTP/1.1
+GET /API/2.0/Meta/EmployeeManagement/Employee/Default/FirstName?token=/wEFKnpvbmRhfDY1YzJiNTFhLTFhYTMtNGYzZC05YjFhLWY0Njk0NmI2YWU5YQ==
 
 ### Sample Response
 
@@ -424,7 +424,7 @@ Get details for the given operation.
 
 ### Syntax
 
-GET /API/version/Meta/module/component/type/operation?token=token HTTP/1.1
+GET /API/version/Meta/module/component/type/operation?token=token
 
 ### Parameters
 
@@ -438,7 +438,7 @@ GET /API/version/Meta/module/component/type/operation?token=token HTTP/1.1
 
 ### Sample Request
 
-GET /API/2.0/Meta/EmployeeManagement/Employee/Default/Delete?token=/wEFKnpvbmRhfDY1YzJiNTFhLTFhYTMtNGYzZC05YjFhLWY0Njk0NmI2YWU5YQ== HTTP/1.1
+GET /API/2.0/Meta/EmployeeManagement/Employee/Default/Delete?token=/wEFKnpvbmRhfDY1YzJiNTFhLTFhYTMtNGYzZC05YjFhLWY0Njk0NmI2YWU5YQ==
 
 ### Sample Response
 
