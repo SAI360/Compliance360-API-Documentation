@@ -14,7 +14,7 @@ GET /API/version/Meta?token=token
 
 | Parameter | Type | Required | Description |
 | --- | --- | --- | --- |
-| token | string | Yes | The user context token obtained using [Authenticate](security.md). |
+| token | string | Yes | The user context token obtained using [Authenticate](Security.md#authenticate). |
 
 ### Sample Request
 ```
