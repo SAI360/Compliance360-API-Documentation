@@ -45,7 +45,7 @@ GET /API/version/Security/Authenticate?organization=organization &integrationkey
 
 ### Sample Request
 
-GET /API/2.0/Security/OrganizationHost?organization=myorg&integrationkey=MPI053EIHLHHTJZUWE8TOJU5HXO53FIIHK1HWGZR2IO&culture=en-us HTTP/1.1
+GET /API/2.0/Security/Authenticate?organization=myorg&integrationkey=MPI053EIHLHHTJZUWE8TOJU5HXO53FIIHK1HWGZR2IO&culture=en-us HTTP/1.1
 
 ### Sample Response
 
