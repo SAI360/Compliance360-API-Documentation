@@ -1,5 +1,20 @@
 # API Documentation
 
+## Common Uses
+
+* Employee Import. Create or Update one or more C360 Employees. See the following sample code for the most efficient manner of doing this. [Compliance 360 Import (batch import)](https://github.com/SAIGlobal/Compliance360-Import)
+* Incident Import. Create or Update one or more C360 Incidents. See the following sample code for the most efficient manner of doing this. [Compliance 360 Import (batch import)](https://github.com/SAIGlobal/Compliance360-Import)
+
+## API Support
+If you are having a problem with a specific call returning unexpected results, contact SAI30 Support by sending an email to support@sai360.com.
+You must provide the following information for your question to be researhced;
+* The specific call and arguments being made, redacted of any confidential customer information, such as passwords, and for PHI/PII data.
+* What results are being returned.
+* What results you expected to be returned.
+Please note that without this information, your question cannot be addressed by our technical staff.
+
+## Documentation Organization
+
 The Compliance 360 API uses the GET verb to retrieve information and the POST verb to insert, update and delete information.
 
 The API sources are split into five distinct categories. All API resources have a version as part of the URL which determines which version of the API to use. API versions do not correspond to releases of the Compliance 360 application and is only incremented to preserve backward compatibility within the API.
