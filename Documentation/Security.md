@@ -2,7 +2,7 @@
 
 Before a client can authenticate with the Compliance 360 API, the client must resolve the correct host that will be servicing requests for the specific organization. Once that host is resolved, all requests should be sent to that specific host including Authenticate requests. To request a user context token, which is required for all data and metadata requests, you must use the Authenticate method on the correct host. 
 
-[SwaggerHub](https://app.swaggerhub.com/api/saiglobal/compliance360-security/2.0.0). [yaml](compliance360-security-api.yaml)
+[SwaggerHub](https://app.swaggerhub.com/api/saiglobal/compliance360-security/2.0.0) [yaml](compliance360-security-api.yaml)
 
 ## OrganizationHost
 
