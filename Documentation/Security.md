@@ -58,7 +58,7 @@ HTTP/1.1 200 OK<br>
 ```
 ## Authenticate (with Batch Import)
 
-When POSTed with a data file, Authenticate will queue an Import job to import the posted data. The import is governed by the Mappings tab in the C360 Integration (designated by the IntegrationKey). There you define the Unique Identifier field that determines creating vs. updating records, field defaults, field mappings and field defaults for new records. 
+When POSTed with a data file, Authenticate will queue an Import job to import the posted data. The import is governed by the Mappings tab in the C360 Integration (designated by the IntegrationKey). There you define the Unique Identifier field that determines creating vs. updating records, field mappings from import file to C360 and field defaults for new records. 
 
 ### Syntax
 
