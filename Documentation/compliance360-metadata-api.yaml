@@ -1,0 +1,662 @@
+openapi: 3.0.0
+# Added by API Auto Mocking Plugin
+servers:
+  #- description: SwaggerHub API Auto Mocking
+  #  url: https://virtserver.swaggerhub.com/saiglobal/compliance-360/2.0.0
+  - description: Production Compliance 360
+    url: https://secure.compliance360.com
+info:
+  description: |
+    Overview
+    ======
+    The Compliance 360 Metadata API is used to describe
+     the business objects within the Compliance 360 system. This API 
+     can be used to discover the properties and relationships of the various business objects that make up the application.
+    
+    Setup 
+    ======
+    Please note that the Metadata API endpoints are secured and an session token is required to access these secure resources. Please see the Security API documentation for details on how to acquire an session token.
+  version: "2.0.0"
+  title: Compliance 360 Metadata API
+  contact:
+    email: support@saiglobal.com
+  license:
+    name: Apache 2.0
+    url: 'http://www.apache.org/licenses/LICENSE-2.0.html'
+#tags:
+#  - name: API Users
+#    description: Operations available to all API Users
+paths:
+  /API/2.0/Meta:
+    get:
+      tags:
+        - Metadata
+      summary: Finds all MetadataModules that are installed in the client's instance of Compliance 360.
+      operationId: getAllModules
+      description: |
+        # Summary
+        Returns all modules in the application. Please be aware that this endpoint does not currently support any filtering options, therefore it is an expensive call. It is suggested that you return MetadataModules by name instead of using this endpoint.
+      parameters:
+        - in: query
+          name: token
+          description: The current authorization token obtained using security API.
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Returns an array of MetadataModules
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/MetadataModuleResponse'
+        '400':
+          description: Bad input parameter
+        '401':
+          description: Authorization token is not valid or you do not have permission to view the requested item.
+          
+  /API/2.0/Meta/{moduleName}:
+    get:
+      tags:
+        - Metadata
+      summary: Finds a MetadataModule by its name.
+      operationId: getModule
+      description: |
+        # Summary
+        Returns a MetadataModule by its name.
+      parameters:
+        - in: path
+          name: moduleName
+          description: The name of the module to return.
+          required: true
+          schema:
+            type: string
+        - in: query
+          name: token
+          description: The current session token obtained using the security API.
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Returns a MetadataModule
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/MetadataModuleResponse'
+        '400':
+          description: Bad input parameter
+        '401':
+          description: Authorization token is not valid or you do not have permission to view the requested item.'
+        '404':
+          description: MetadataModule cannot be found using the supplied **moduleName**
+
+  /API/2.0/Meta/{moduleName}/{componentName}:
+    get:
+      tags:
+        - Metadata
+      summary: Finds a MetadataComponent by its name.
+      operationId: getComponent
+      description: |
+        # Summary
+        Returns a MetadataComponent by its name.
+      parameters:
+        - in: path
+          name: moduleName
+          description: The name of the module to return.
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: componentName
+          description: The name of the component to return.
+          required: true
+          schema:
+            type: string
+        - in: query
+          name: token
+          description: The current session token obtained using security API.
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Returns a MetadataComponent by its name
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/ComponentResponse'
+        '400':
+          description: Bad input parameter
+        '401':
+          description: Authorization token is not valid or you do not have permission to view the requested item.'
+        '404':
+          description: MetadataModule cannot be found using the supplied **moduleName**
+  
+  /API/2.0/Meta/{moduleName}/{componentName}/{typeName}:
+    get:
+      tags:
+        - Metadata
+      summary: Finds a MetadataComponent by its name.
+      operationId: getComponent
+      description: |
+        # Summary
+        Returns a MetadataComponentType by its name.
+      parameters:
+        - in: path
+          name: moduleName
+          description: The name of the module to return.
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: componentName
+          description: The name of the component to return.
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: typeName
+          description: The name of the type to return.
+          required: true
+          schema:
+            type: string
+        - in: query
+          name: token
+          description: The current session token obtained using security API.
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Returns a MetadataComponentType by its name
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/ComponentResponse'
+        '400':
+          description: Bad input parameter
+        '401':
+          description: Authorization token is not valid or you do not have permission to view the requested item.'
+        '404':
+          description: "
+          MetadataModule cannot be found using the supplied **moduleName**
+          <br>or<br>
+          MetadataComponent cannot be found using the supplied **componentName**
+          <br>or<br>
+          MetadataModuleType cannot be found using the supplied **typeName**
+          "
+          
+  /API/2.0/Meta/{moduleName}/{componentName}/{typeName}/{fieldName}:
+    get:
+      tags:
+        - Metadata
+      summary: Finds a MetadataComponentField by its name.
+      operationId: getField
+      description: |
+        # Summary
+        Returns a MetadataComponentField by its name.
+      parameters:
+        - in: path
+          name: moduleName
+          description: The name of the module to return.
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: componentName
+          description: The name of the component to return.
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: typeName
+          description: The name of the type to return.
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: fieldName
+          description: The name of the field to return.
+          required: true
+          schema:
+            type: string
+        - in: query
+          name: token
+          description: The current session token obtained using security API.
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Returns a MetadataComponentField by its name
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/FieldResponse'
+        '400':
+          description: Bad input parameter
+        '401':
+          description: Authorization token is not valid or you do not have permission to view the requested item.'
+        '404':
+          description: "
+          MetadataModule cannot be found using the supplied **moduleName**
+          <br>or<br>
+          MetadataComponent cannot be found using the supplied **componentName**
+          <br>or<br>
+          MetadataModuleType cannot be found using the supplied **typeName**
+          <br>or<br>
+          MetadataComponentField cannot be found using the supplied **fieldName**
+          "
+          
+  /API/2.0/Meta/{moduleName}/{componentName}/{typeName}/{operationName}:
+    get:
+      tags:
+        - Metadata
+      summary: Finds a MetadataComponentOperation by its name.
+      operationId: getOperation
+      description: |
+        # Summary
+        Returns a MetadataComponentOperation by its name.
+      parameters:
+        - in: path
+          name: moduleName
+          description: The name of the module to return.
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: componentName
+          description: The name of the component to return.
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: typeName
+          description: The name of the type to return.
+          required: true
+          schema:
+            type: string
+        - in: path
+          name: operationName
+          description: The name of the operation to return.
+          required: true
+          schema:
+            type: string
+        - in: query
+          name: token
+          description: The current session token obtained using security API.
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Returns a MetadataComponentOperation by its name
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/OperationResponse'
+        '400':
+          description: Bad input parameter
+        '401':
+          description: Authorization token is not valid or you do not have permission to view the requested item.'
+        '404':
+          description: "
+          MetadataModule cannot be found using the supplied **moduleName**
+          <br>or<br>
+          MetadataComponent cannot be found using the supplied **componentName**
+          <br>or<br>
+          MetadataModuleType cannot be found using the supplied **typeName**
+          <br>or<br>
+          MetadataComponentOperation cannot be found using the supplied **operationName**
+          "
+components:
+  schemas:
+    ResponseStatus:
+      type: object
+      required:
+        - code
+        - message
+      properties:
+        code:
+          description: "HTTP status code."
+          type: string
+          example: "200"
+        message:
+          description: "The string constant \"OK\" or an error message if code is something other than \"200\"."
+          type: string
+          example: "OK"
+          
+    MetadataModuleResponse:
+      type: object
+      required:
+        - status
+        - data
+      properties:
+        status:
+          $ref: '#/components/schemas/ResponseStatus'
+        data:
+          description: An array of MetadataModule objects
+          type: array
+          items: 
+            $ref: '#/components/schemas/MetadataModule'
+    
+    ComponentResponse:
+      type: object
+      required:
+        - status
+        - data
+      properties:
+        status:
+          $ref: '#/components/schemas/ResponseStatus'
+        data:
+          description: An array of MetadataComponent objects
+          type: array
+          items: 
+            $ref: '#/components/schemas/MetadataComponent'
+            
+    TypeResponse:
+      type: object
+      required:
+        - status
+        - data
+      properties:
+        status:
+          $ref: '#/components/schemas/ResponseStatus'
+        data:
+          description: An array of MetadataType objects
+          type: array
+          items: 
+            $ref: '#/components/schemas/MetadataComponentType'
+            
+    FieldResponse:
+      type: object
+      required:
+        - status
+        - data
+      properties:
+        status:
+          $ref: '#/components/schemas/ResponseStatus'
+        data:
+          description: An array of MetadataComponentField objects
+          type: array
+          items: 
+            $ref: '#/components/schemas/MetadataComponentField'
+    
+    OperationResponse:
+      type: object
+      required:
+        - status
+        - data
+      properties:
+        status:
+          $ref: '#/components/schemas/ResponseStatus'
+        data:
+          description: An array of MetadataComponentOperation objects
+          type: array
+          items: 
+            $ref: '#/components/schemas/MetadataComponentOperation'
+            
+    MetadataModule:
+      type: object
+      description: MetadataModules are the top level components in the Compliance 360 system. They contain the Component definitions and all other application module configuration and functionality.
+      properties:
+        Type:
+          type: string
+          enum: [Module]
+        Token:
+          type: string
+          example: PolicyManager
+          description: The unique name of the Module.
+        QualifiedToken:
+          type: string
+          example: PolicyManager
+          description: The unique qualified path name of this Module. Since modules are top level objects, this value will be the same as the Token value.
+        Components:
+          description: "An array of components that exist within the Module. A component is an entity that stores information about a business object. For example: Incident, Policy and Employee are all Components."
+          type: array
+          items:
+            $ref: '#/components/schemas/MetadataComponent'
+            
+    MetadataComponent:
+      type: object
+      description: MetadataComponents describe the business objects, relationships and operations that can be performed within the application.
+      properties:
+        Type:
+          type: string
+          enum: [Component]
+        Token:
+          type: string
+          example: MetaPolicy
+          description: The unique name of this Component.
+        QualifiedToken:
+          type: string
+          example: PolicyManager/MetaPolicy
+          description: The unique module qualified path name of this Component.
+        Module:
+          type: object
+          properties:  
+            Token:
+              type: string
+              description: The unique name of the referenced Module.
+              example: "PolicyManager"
+            QualifiedToken:
+              type: string
+              description: The unique qualified path to the referenced Module.
+              example: "PolicyManager"
+        Types:
+          description: "An array of MetadataComponentTypes that belong to the #ComponentMetadataComponentTypes are logical groupings configuration information #including" 
+          type: array
+          items:
+            $ref: '#/components/schemas/MetadataComponentType'
+
+    MetadataComponentType:  
+      type: object
+      description: "MetadataComponentTypes are a \"view\" or slice of a MetadataComponent. Types give you the ability to configure the same root object for different purposes. For example you may have a root Policy object, but you wish to have different fields for a DR (Disaster Recovery) Policy vs. an HR Policy."
+      properties:
+        Type:
+          type: string
+          enum: [Type]
+        Token:
+          type: string
+          example: Default
+          description: The unique name of the MetadataComponentType
+        QualifiedToken:
+          type: string
+          example: PolicyManager/MetaPolicy/Default
+          description: The unique {Module}/{Component} qualified path name of this Type.
+        IsReadOnly:
+          type: boolean
+        Module:
+          type: object
+          properties:  
+            Token:
+              type: string
+              description: The unique name of the referenced Module.
+              example: "PolicyManager"
+            QualifiedToken:
+              type: string
+              description: The unique qualified path to the referenced Module.
+              example: "PolicyManager"
+        Component:
+          type: object
+          properties:
+            Token:
+              type: string
+              description: The unique name of the referenced Module.
+              example: "MetaPolicy"
+            QualifiedToken:
+              type: string
+              description: The unique qualified path to the referenced Module.
+              example: "PolicyManager/MetaPolicy"
+        Fields:
+          type: array
+          items:
+            $ref: '#/components/schemas/MetadataComponentField'
+        Operations:
+          type: array
+          items:
+            $ref: '#/components/schemas/MetadataComponentOperation'
+    
+    MetadataComponentField:
+      type: object
+      description:  "MetadataComponentFields represent a single property value or a reference to one or more other Components."
+      properties:
+        Module:
+          type: object  
+          properties:
+            Token:
+              type: string
+              description: The unique name of the referenced Module.
+              example: "PolicyManager"
+            QualifiedToken:
+              type: string
+              description: The unique qualified path to the referenced Module.
+              example: "PolicyManager"
+        Component:
+          type: object  
+          properties:
+            Token:
+              type: string
+              description: The unique name of the referenced Component.
+              example: "MetaPolicy"
+            QualifiedToken:
+              type: string
+              description: The unique qualified path to the referenced Component.
+              example: "PolicyManager/MetaPolicy"
+        Type:
+          type: object
+          properties:
+            Token:
+              type: string
+              description: The unique name of the referenced Type.
+              example: "Default"
+            QualifiedToken:
+              type: string
+              description: The unique qualified path to the referenced Type.
+              example: "PolicyManager/MetaPolicy/Default"
+        Token:
+          type: string
+          description: The unique name of the MetadataComponentField
+          example: RespParty
+        QualifiedToken:
+          type: string
+          example: PolicyManager/MetaPolicy/Default/RespParty
+          description: The unique {Module}/{Component}/{Type} qualified path name of this Field.
+        FieldType:
+          type: string
+          enum: [Boolean,
+                  DateTime,
+                  DateTimeUtc,
+                  Integer,
+                  Decimal,
+                  Relation,
+                  Opaque,
+                  String,
+                  LongString,
+                  Blob]
+          example: string
+        IsMultiValue:
+          description: "true, if the relationship is a one-to-many type relationship. Otherwise it is false for a one-to-one."
+          type: boolean
+          example: true
+        IsReadOnly:
+          type: boolean
+          example: false
+        IsRequired:
+          type: boolean
+          example: true
+        RelatedComponent:
+          type: object
+          description: "If the field is of type \"Relation\" then RelatedComponent points to the destination Component of the relationship."
+          properties:
+            Token:
+              type: string
+              description: The unique name of the referenced Component.
+              example: "Employee"
+            QualifiedToken:
+              type: string
+              description: The unique qualified path to the referenced Component.
+              example: "EmployeeManagement/Employee"
+        RelatedType:
+          type: object
+          description: "If the field is of type \"Relation\" then RelatedType points to the destination ComponentType of the relationship."
+          properties:
+            Token:
+              type: string
+              description: The unique name of the referenced Component Type.
+              example: "Default"
+            QualifiedToken:
+              type: string
+              description: The unique qualified path to the referenced Component Type.
+              example: "EmployeeManagement/Employee/Default"
+              
+    MetadataComponentOperation:
+      type: object
+      description:  "MetadataComponentOperations represent actions that can performed on the component. One example may be checking in or out a Policy or Deleting an Incident."
+      properties:
+        Module:
+          type: object  
+          properties:
+            Token:
+              type: string
+              description: The unique name of the referenced Module.
+              example: "PolicyManager"
+            QualifiedToken:
+              type: string
+              description: The unique qualified path to the referenced Module.
+              example: "PolicyManager"
+        Component:
+          type: object  
+          properties:
+            Token:
+              type: string
+              description: The unique name of the referenced Component.
+              example: "MetaPolicy"
+            QualifiedToken:
+              type: string
+              description: The unique qualified path to the referenced Component.
+              example: "PolicyManager/MetaPolicy"
+        Type:
+          type: object
+          properties:
+            Token:
+              type: string
+              description: The unique name of the referenced Type.
+              example: "Default"
+            QualifiedToken:
+              type: string
+              description: The unique qualified path to the referenced Type.
+              example: "PolicyManager/MetaPolicy/Default"
+        Token:
+          type: string
+          description: The unique name of the MetadataComponentOperation
+          example: Delete
+        QualifiedToken:
+          type: string
+          example: PolicyManager/MetaPolicy/Default/Delete
+          description: The unique {Module}/{Component}/{Type} qualified path name of this Operation.
+        Validator:
+          type: object
+          description: Users may POST to the OperationValidator endpoint to check to see if the user is capable of performing the Operation. For example, you may call a validator to check to see if a user may CheckOut and lock a Policy object before executing the CheckOut Operation.
+          properties:
+            Token:
+              type: string
+              description: The unique name of the Operation Validator.
+              example: "CanDelete"
+            QualifiedToken:
+              type: string
+              description: The unique qualified path to the referenced Operation Validator.
+              example: "PolicyManager/MetaPolicy/CanDelete"

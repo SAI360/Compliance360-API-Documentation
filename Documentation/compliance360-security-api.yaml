@@ -1,0 +1,174 @@
+openapi: 3.0.0
+# Added by API Auto Mocking Plugin
+servers:
+  - description: SwaggerHub API Auto Mocking
+    url: https://virtserver.swaggerhub.com/saiglobal/compliance360-security/2.0.0
+  - description: Production Compliance 360
+    url: https://secure.compliance360.com
+info:
+  description: |
+    Overview
+    ======
+    The Compliance 360 Security API is used to generate session tokens, which must be included with all secured API requests. The token is an encrypted string which is typically included as a query parameter called \"token\".
+  version: "2.0.0"
+  title: Compliance 360 Security API
+  contact:
+    email: support@saiglobal.com
+  license:
+    name: Apache 2.0
+    url: 'http://www.apache.org/licenses/LICENSE-2.0.html'
+#  - name: developers
+#    description: Operations available to regular developers
+paths:
+  /API/2.0/Security/Login:
+    post:
+      tags:
+        - Security
+      summary: Authenticates a user with the Compliance 360 application returning the session token.
+      operationId: authenticate
+      description: |
+        # Summary
+        Authenticates a user with the Compliance 360 application returning the session token.
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                organization:
+                  type: string
+                username:
+                  type: string
+                password:
+                  type: string
+                culture:
+                  type: string
+              example:
+                organization: c360
+                username: sample_user
+                password: sample_password
+                culture: en-US
+      responses:
+        '200':
+          description: Returns the session token which must be included with each request for secured resources.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: object
+                    properties:
+                      code:
+                        description: HTTP status code. 
+                        type: string
+                        example: 200
+                      message:
+                        description: "The string constant \"OK\" or an error message if code is someting other than \"200\"."
+                        type: string
+                        example: OK
+                  token:
+                    type: string
+                    description: The session token.
+                    example: LpemBgi4JESNOqOnRND5L5lqJbWO1xP0jc3%2DDng09BacirEAwMCgvupQHWp%2BDnCh
+        '400':
+          description: Invalid culture code.
+        '401':
+          description: Invalid organization, username or password.
+  /API/2.0/Security/Logout:
+    get:
+      tags:
+        - Security
+      summary: Ends a user's session, invalidating the session token.
+      operationId: logout
+      description: |
+        # Summary
+        Ends a user's session, invalidating the session token.
+      parameters:
+        - in: query
+          name: token
+          description: The session token to invalidate
+          schema:
+            type: string
+            example: LpemBgi4JESNOqOnRND5L5lqJbWO1xP0jc3%2DDng09BacirEAwMCgvupQHWp%2
+      responses:
+        '200':
+          description: Success
+  /API/2.0/Security/GetCulture:
+    get:
+      tags:
+        - Session Information
+      summary: Returns the current culture of the session specified by the supplied session token.
+      operationId: getCulture
+      description: |
+        # Summary
+        Returns the current culture of the session specified by the supplied authentication token.
+      parameters:
+        - in: query
+          name: token
+          description: The session token
+          schema:
+            type: string
+            example: LpemBgi4JESNOqOnRND5L5lqJbWO1xP0jc3%2DDng09BacirEAwMCgvupQHWp%2
+      responses:
+        '200':
+          description: Returns the authentication token which must be included with each request for secured resources.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: object
+                    properties:
+                      code:
+                        description: HTTP status code. 
+                        type: string
+                        example: 200
+                      message:
+                        description: "The string constant \"OK\" or an error message if http status code is something other than \"200\"."
+                        type: string
+                        example: OK
+                  culture:
+                    type: string
+                    description: The culture name value associated with the current session.
+                    example: LpemBgi4JESNOqOnRND5L5lqJbWO1xP0jc3%2DDng09BacirEAwMCgvupQHWp%2BDnCh
+  /API/2.0/Security/OrganizationHost:
+    get:
+      tags:
+        - Security
+      summary: Returns the base uri for the specified organization.
+      operationId: getCulture
+      description: |
+        # Summary
+        Returns the base uri for the specified organization.
+      parameters:
+        - in: query
+          name: organization
+          description: The organization name.
+          schema:
+            type: string
+            example: LpemBgi4JESNOqOnRND5L5lqJbWO1xP0jc3%2DDng09BacirEAwMCgvupQHWp%2
+      responses:
+        '200':
+          description: Returns the authentication token which must be included with each request for secured resources.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: object
+                    properties:
+                      code:
+                        description: HTTP status code. 
+                        type: string
+                        example: 200
+                      message:
+                        description: "The string constant \"OK\" or an error message if http status code is something other than \"200\"."
+                        type: string
+                        example: OK
+                  host:
+                    type: string
+                    description: The base application uri for the specified organization.
+                    example: https://secure.compliance360.com
