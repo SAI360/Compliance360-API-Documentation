@@ -2,7 +2,7 @@
 
 The data resource is used to create, retrieve, update, and execute operations for instances of the business objects within the Compliance 360 system. Where the metadata describes the business objects, the data is the actual business data populated into instance of those definitions.
 
- [Swaggerhub](https://app.swaggerhub.com/api/saiglobal/compliance360-data/2.0.0) [yaml](compliance360-data-api.yaml)
+ [SwaggerHub](https://app.swaggerhub.com/api/saiglobal/compliance360-data/2.0.0) [yaml](compliance360-data-api.yaml)
 
 ## Create
 
