@@ -2,6 +2,8 @@
 
 Metadata is used to describe the business objects within the Compliance 360 system. The metadata access methods allow a caller to read the definitions of the business data and how it relates to other elements of data.
 
+[SwaggerHub](https://app.swaggerhub.com/api/saiglobal/compliance360-metadata/2.0.0) [yaml](compliance360-metadata-api.yaml)
+
 ## GetAllModules
 
 Get a list of all the modules, components, types and fields in the Compliance 360 metadata system to which the authenticated user has access.
