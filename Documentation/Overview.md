@@ -19,13 +19,13 @@ The Compliance 360 API uses the GET verb to retrieve information and the POST ve
 
 The API sources are split into five distinct categories. All API resources have a version as part of the URL which determines which version of the API to use. API versions do not correspond to releases of the Compliance 360 application and is only incremented to preserve backward compatibility within the API.
 
-| Category | URL | Description |
-| --- | --- | --- |
-| [Security](security.html) | https://secure.compliance360.com/API/2.0/Security/ | Provides the ability to log in with a username and password |
-| [Metadata](meta.html) | https://secure.compliance360.com/API/2.0/Meta/ | Provides metadata information about the entities and fields exposed by the other APIs |
-| [Data](data.html) | https://secure.compliance360.com/API/2.0/Data/ | Provides CRUD (create, retrieve, update and delete) operations for entities and fields |
-| [Raw](raw.html) | https://secure.compliance360.com/API/2.0/Raw/ | Provides streaming functionality for uploading and downloading files |
-| [History](history.html) | https://secure.compliance360.com/API/2.0/History/ | Provides retrieve operation for entities that track history |
+| Category | Description |
+| --- | --- |
+| [Security](security.md) | Provides the ability to log in with a username and password |
+| [Metadata](meta.md) | Provides metadata information about the entities and fields exposed by the other APIs |
+| [Data](data.md) | Provides CRUD (create, retrieve, update and delete) operations for entities and fields |
+| [Raw](raw.md) | Provides streaming functionality for uploading and downloading files |
+| [History](history.md) | Provides retrieve operation for entities that track history |
 
 ## Basic Terminology
 
