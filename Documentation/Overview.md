@@ -21,11 +21,11 @@ The API sources are split into five distinct categories. All API resources have 
 
 | Category | Description |
 | --- | --- |
-| [Security](security.md) | Provides the ability to log in with a username and password |
-| [Metadata](meta.md) | Provides metadata information about the entities and fields exposed by the other APIs |
-| [Data](data.md) | Provides CRUD (create, retrieve, update and delete) operations for entities and fields |
-| [Raw](raw.md) | Provides streaming functionality for uploading and downloading files |
-| [History](history.md) | Provides retrieve operation for entities that track history |
+| [Security](Security.md) | Provides the ability to log in with a username and password |
+| [Metadata](Meta.md) | Provides metadata information about the entities and fields exposed by the other APIs |
+| [Data](Data.md) | Provides CRUD (create, retrieve, update and delete) operations for entities and fields |
+| [Raw](Raw.md) | Provides streaming functionality for uploading and downloading files |
+| [History](History.md) | Provides retrieve operation for entities that track history |
 
 ## Basic Terminology
 
