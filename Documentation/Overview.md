@@ -2,8 +2,8 @@
 
 ## Common Uses
 
-* Employee Import. Create or Update one or more C360 Employees. See the following sample code for the most efficient manner of doing this. [Compliance 360 Import (batch import)](https://github.com/SAIGlobal/Compliance360-Import)
-* Incident Import. Create or Update one or more C360 Incidents. See the following sample code for the most efficient manner of doing this. [Compliance 360 Import (batch import)](https://github.com/SAIGlobal/Compliance360-Import)
+* Employee Import. Create or Update one or more C360 Employees. See the following sample code for the most efficient manner of doing this. [Employee Batch Import](https://github.com/SAIGlobal/Compliance360-Import/tree/master/Employee)
+* Incident Import. Create or Update one or more C360 Incidents. See the following sample code for the most efficient manner of doing this. [Incident Batch Import](https://github.com/SAIGlobal/Compliance360-Import/tree/master/Incident)
 
 ## API Support
 If you are having a problem with a specific call returning unexpected results, contact SAI30 Support by sending an email to support@sai360.com.
