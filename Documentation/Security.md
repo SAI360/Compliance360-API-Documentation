@@ -73,7 +73,9 @@ POST /API/version/Security/Authenticate?organization=organization &integrationke
 | culture | string | No | The culture to use for the session (usually en-us). |
 | module | string | Yes | The token of the module in which to create/update the data.  This token can be obtained using [Metadata](Meta.md). |
 | component | string | Yes | The token of the component in which to create/update the data.  This token can be obtained using [Metadata](Meta.md). |
-| FieldDelimiter | string | No | Identifies the value to use as a field delimiter in the data porvided in the body of the POST. |
+| FieldDelimiter | string | No | Identifies the value seperating the fields in the import data. This only pertains to Delimited (CSV) data types and only of it is other than the default value of a comma (,) |
+| MultiDelimiter | string | No | If importing in to Multi Lookup fields, this identifies the value seperating multiple lookup values. The default value is a comma (,). Note that the FieldDelimiter and the MultiDelimiter cannot both be commas. |
+| MultiRemove | string | No | If importing in to Multi Lookup fields, new individual lookup values in the input data will be added to the target Multi Lookup field. However, individual lookup values not present in the input data will NOT be removed from the target Multi Lookup field. If desired to also remove individual lookup values when they are not present in the input data, set this parameter to **true**. |
 
 ### Sample Request
 ```
